@@ -1,0 +1,1388 @@
+{
+  "metadata": {
+    "fecha_analisis": "2025-06-05T03:19:00.317594",
+    "total_videos_analizados": 64,
+    "fuente_datos": "/workspace/browser/extracted_content/horacio_lanci_youtube_videos.json"
+  },
+  "estadisticas_generales": {
+    "resumen_general": {
+      "total_videos": 64,
+      "total_audiolibros": 45,
+      "total_analisis_musicales": 14,
+      "total_otros": 5,
+      "total_visualizaciones": 1013500,
+      "duracion_total_horas": 238.52083333333334,
+      "promedio_vistas_por_video": 15835.9375,
+      "video_mas_visto": {
+        "titulo": "🎙️ Audiolibro COMPLETO 📚 en ESPAÑOL 🕵🏻 Las aventuras de SHERLOCK HOLMES 🔍 de Arthur Conan Doyle",
+        "vistas": 181000
+      }
+    },
+    "audiolibros": {
+      "por_autor": {
+        "Julio Verne": 6,
+        "Arthur Conan Doyle": 6,
+        "George Orwell": 4,
+        "Edgar Allan Poe": 3,
+        "Oscar Wilde": 2,
+        "Rabindranath Tagore": 2,
+        "H. G. Wells": 2,
+        "Cervantes / Unamuno": 2,
+        "Felipe Pigna": 2,
+        "Adolfo Bioy Casares": 2,
+        "Pierre Teilhard de Chardin": 1,
+        "Charles Dickens": 1,
+        "Khalil Gibran": 1,
+        "R. Stevenson": 1,
+        "Franz Kafka": 1,
+        "Almafuerte": 1,
+        "Jorge Luis Borges": 1,
+        "Ana Frank": 1,
+        "Horacio Quiroga": 1,
+        "Antoine de Saint-Exupéry": 1,
+        "Félix Luna": 1,
+        "Gabriela Mistral": 1,
+        "Ray Bradbury": 1,
+        "Vicente Huidobro": 1
+      },
+      "por_genero": {
+        "misterio_detective": 8,
+        "poesia_espiritualidad": 6,
+        "ciencia_ficcion": 6,
+        "literatura_terror": 5,
+        "literatura_clasica": 5,
+        "distopia": 4,
+        "historia_biografia": 4,
+        "literatura_argentina": 4,
+        "aventura": 1,
+        "literatura_general": 1,
+        "cuento_infantil": 1
+      },
+      "duracion_promedio_minutos": 297.06925925925924,
+      "total_horas_contenido": 222.80194444444444,
+      "obras_multivolumen": 11,
+      "autores_unicos": 24,
+      "audiolibro_mas_largo": {
+        "titulo": "🎙️ Audiolibro COMPLETO 📚 en ESPAÑOL 🕵🏻 Las aventuras de SHERLOCK HOLMES 🔍 de Arthur Conan Doyle",
+        "duracion_horas": 12.162777777777778
+      }
+    },
+    "analisis_musicales": {
+      "total_programas": 14,
+      "compositores_analizados": {
+        "Beethoven": 6,
+        "Carl Orff": 2,
+        "Tchaikovsky": 1,
+        "Richard Wagner": 1,
+        "Maurice Ravel": 1,
+        "Wolfgang Amadeus Mozart": 1,
+        "Igor Stravinsky": 1
+      },
+      "duracion_promedio_minutos": 53.925000000000004,
+      "total_horas_contenido": 12.582500000000001
+    }
+  },
+  "catalogos_estructurados": {
+    "por_autor": {
+      "Julio Verne": [
+        {
+          "titulo": "El Chancellor",
+          "duracion_minutos": 395.68333333333334,
+          "vistas": 5100,
+          "url": "https://www.youtube.com/watch?v=lePnPfjQyu0",
+          "genero": "aventura",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "La Isla Misteriosa (Vol 2)",
+          "duracion_minutos": 706.0666666666667,
+          "vistas": 12000,
+          "url": "https://www.youtube.com/watch?v=HsYFvIjWUbU",
+          "genero": "misterio_detective",
+          "es_multivolumen": true,
+          "volumen": 2
+        },
+        {
+          "titulo": "La Isla Misteriosa (Vol 1)",
+          "duracion_minutos": 701.1166666666667,
+          "vistas": 20000,
+          "url": "https://www.youtube.com/watch?v=6ww2fOCngO0",
+          "genero": "misterio_detective",
+          "es_multivolumen": true,
+          "volumen": 1
+        },
+        {
+          "titulo": "Viaje al centro de la Tierra",
+          "duracion_minutos": 530.15,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=Hzk-2-Mowik",
+          "genero": "ciencia_ficcion",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "20.000 Leguas de Viaje Submarino (Vol. 2)",
+          "duracion_minutos": 562.7,
+          "vistas": 31000,
+          "url": "https://www.youtube.com/watch?v=mNS96h_SbK0",
+          "genero": "ciencia_ficcion",
+          "es_multivolumen": true,
+          "volumen": null
+        },
+        {
+          "titulo": "20.000 Leguas de Viaje Submarino (Vol. 1)",
+          "duracion_minutos": 502.18333333333334,
+          "vistas": 109000,
+          "url": "https://www.youtube.com/watch?v=AHhBOULD9VE",
+          "genero": "ciencia_ficcion",
+          "es_multivolumen": true,
+          "volumen": null
+        }
+      ],
+      "H. G. Wells": [
+        {
+          "titulo": "La Máquina del Tiempo",
+          "duracion_minutos": 254.55,
+          "vistas": 5500,
+          "url": "https://www.youtube.com/watch?v=GdQ29ZKHtjc",
+          "genero": "ciencia_ficcion",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "La Guerra de los Mundos",
+          "duracion_minutos": 402.21666666666664,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=2kpD7efbXpc",
+          "genero": "ciencia_ficcion",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Charles Dickens": [
+        {
+          "titulo": "Cuento de Navidad",
+          "duracion_minutos": 213.03333333333333,
+          "vistas": 1600,
+          "url": "https://www.youtube.com/watch?v=gIW_EKgoAzw",
+          "genero": "literatura_general",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Arthur Conan Doyle": [
+        {
+          "titulo": "Las memorias de Sherlock Holmes",
+          "duracion_minutos": 689.6833333333333,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=a7zUSWA3h_g",
+          "genero": "misterio_detective",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "Sherlock Holmes: El Signo de los Cuatro",
+          "duracion_minutos": 333.6,
+          "vistas": 14000,
+          "url": "https://www.youtube.com/watch?v=f2iZ8evSJ7Y",
+          "genero": "misterio_detective",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "Sherlock Holmes: Un estudio en escarlata",
+          "duracion_minutos": 329.1166666666667,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=97WNyFWNcOE",
+          "genero": "misterio_detective",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "Sherlock Holmes: El Valle del Terror",
+          "duracion_minutos": 412.01666666666665,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=KlNg9Z2VvVo",
+          "genero": "misterio_detective",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "Sherlock Holmes: El Sabueso de los Baskerville",
+          "duracion_minutos": 424.0,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=FvemexmUvEM",
+          "genero": "misterio_detective",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "Las aventuras de Sherlock Holmes",
+          "duracion_minutos": 729.7666666666667,
+          "vistas": 181000,
+          "url": "https://www.youtube.com/watch?v=Bk2AKmZ_QWg",
+          "genero": "misterio_detective",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Pierre Teilhard de Chardin": [
+        {
+          "titulo": "Himno del Universo",
+          "duracion_minutos": 96.73333333333333,
+          "vistas": 2500,
+          "url": "https://www.youtube.com/watch?v=PQiZHw-suwk",
+          "genero": "poesia_espiritualidad",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "R. Stevenson": [
+        {
+          "titulo": "El extraño caso del Dr. Jekyll y Mr. Hyde",
+          "duracion_minutos": 193.01666666666668,
+          "vistas": 9100,
+          "url": "https://www.youtube.com/watch?v=m6-DidN-_Gs",
+          "genero": "literatura_terror",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Cervantes / Unamuno": [
+        {
+          "titulo": "Vida de Don Quijote y Sancho (Parte 2)",
+          "duracion_minutos": 384.45,
+          "vistas": 2000,
+          "url": "https://www.youtube.com/watch?v=HtEDCDJMWQs",
+          "genero": "literatura_clasica",
+          "es_multivolumen": true,
+          "volumen": 2
+        },
+        {
+          "titulo": "Vida de Don Quijote y Sancho (Parte 1)",
+          "duracion_minutos": 344.81666666666666,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=48ZGUEPV0F4",
+          "genero": "literatura_clasica",
+          "es_multivolumen": true,
+          "volumen": 1
+        }
+      ],
+      "Khalil Gibran": [
+        {
+          "titulo": "El Profeta",
+          "duracion_minutos": 102.38333333333334,
+          "vistas": 4900,
+          "url": "https://www.youtube.com/watch?v=YG1bM_HVrSA",
+          "genero": "poesia_espiritualidad",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Franz Kafka": [
+        {
+          "titulo": "La Metamorfosis",
+          "duracion_minutos": 136.83333333333334,
+          "vistas": 19000,
+          "url": "https://www.youtube.com/watch?v=DDqEApv0o5M",
+          "genero": "literatura_clasica",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Oscar Wilde": [
+        {
+          "titulo": "El retrato de Dorian Gray",
+          "duracion_minutos": 583.3666666666667,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=P1IQ7Giw-mI",
+          "genero": "literatura_clasica",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "El fantasma de Canterville",
+          "duracion_minutos": 92.08333333333333,
+          "vistas": 7300,
+          "url": "https://www.youtube.com/watch?v=yFOcVHY6b_w",
+          "genero": "literatura_clasica",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Edgar Allan Poe": [
+        {
+          "titulo": "Los Crímenes de la calle Morgue",
+          "duracion_minutos": 105.56666666666666,
+          "vistas": 6200,
+          "url": "https://www.youtube.com/watch?v=vca3rrOHuE8",
+          "genero": "literatura_terror",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "La Caída de la casa Usher",
+          "duracion_minutos": 54.25,
+          "vistas": 5900,
+          "url": "https://www.youtube.com/watch?v=y_q3qGfwaqs",
+          "genero": "literatura_terror",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "El Corazón Delator",
+          "duracion_minutos": 17.333333333333332,
+          "vistas": 2800,
+          "url": "https://www.youtube.com/watch?v=iZl-lUiL8wE",
+          "genero": "literatura_terror",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Rabindranath Tagore": [
+        {
+          "titulo": "La luna nueva",
+          "duracion_minutos": 65.1,
+          "vistas": 3300,
+          "url": "https://www.youtube.com/watch?v=noQNfFj2-xg",
+          "genero": "poesia_espiritualidad",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "Ofrenda lírica (Gitánjali)",
+          "duracion_minutos": 101.45,
+          "vistas": 6300,
+          "url": "https://www.youtube.com/watch?v=IPADsQ14SDA",
+          "genero": "poesia_espiritualidad",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Almafuerte": [
+        {
+          "titulo": "7 Sonetos medicinales y selección de poesías",
+          "duracion_minutos": 24.916666666666668,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=2OnXcjqWWJ4",
+          "genero": "literatura_terror",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "George Orwell": [
+        {
+          "titulo": "1984 (Parte 3)",
+          "duracion_minutos": 182.81666666666666,
+          "vistas": 2300,
+          "url": "https://www.youtube.com/watch?v=WLdDdfN1l9A",
+          "genero": "distopia",
+          "es_multivolumen": true,
+          "volumen": 3
+        },
+        {
+          "titulo": "1984 (Parte 2)",
+          "duracion_minutos": 303.3,
+          "vistas": 3200,
+          "url": "https://www.youtube.com/watch?v=LbUGWlVBgHM",
+          "genero": "distopia",
+          "es_multivolumen": true,
+          "volumen": 2
+        },
+        {
+          "titulo": "1984 (Parte 1)",
+          "duracion_minutos": 267.8,
+          "vistas": 8100,
+          "url": "https://www.youtube.com/watch?v=LG2o6hE2p6g",
+          "genero": "distopia",
+          "es_multivolumen": true,
+          "volumen": 1
+        },
+        {
+          "titulo": "Rebelión en la Granja",
+          "duracion_minutos": 237.1,
+          "vistas": 70000,
+          "url": "https://www.youtube.com/watch?v=rwctAAL3wDc",
+          "genero": "distopia",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Ana Frank": [
+        {
+          "titulo": "El Diario de Ana Frank",
+          "duracion_minutos": 226.16666666666666,
+          "vistas": 11000,
+          "url": "https://www.youtube.com/watch?v=Z6g0iw4_B1Y",
+          "genero": "historia_biografia",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Jorge Luis Borges": [
+        {
+          "titulo": "El Hacedor",
+          "duracion_minutos": 117.31666666666666,
+          "vistas": 10000,
+          "url": "https://www.youtube.com/watch?v=LMl_dOKxIW8",
+          "genero": "literatura_argentina",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Horacio Quiroga": [
+        {
+          "titulo": "Cuentos de Amor, de Locura y de Muerte",
+          "duracion_minutos": 97.51666666666667,
+          "vistas": 18000,
+          "url": "https://www.youtube.com/watch?v=MB8YR2dSKh8",
+          "genero": "literatura_argentina",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Adolfo Bioy Casares": [
+        {
+          "titulo": "En Memoria de Paulina",
+          "duracion_minutos": 41.15,
+          "vistas": 3700,
+          "url": "https://www.youtube.com/watch?v=JbGHYU8EBZ8",
+          "genero": "literatura_argentina",
+          "es_multivolumen": false,
+          "volumen": null
+        },
+        {
+          "titulo": "La Invención de Morel",
+          "duracion_minutos": 212.01666666666668,
+          "vistas": 32000,
+          "url": "https://www.youtube.com/watch?v=J-GCcMzCxOg",
+          "genero": "literatura_argentina",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Antoine de Saint-Exupéry": [
+        {
+          "titulo": "El Principito",
+          "duracion_minutos": 112.11666666666666,
+          "vistas": 25000,
+          "url": "https://www.youtube.com/watch?v=53ewXYOAkJM",
+          "genero": "cuento_infantil",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Felipe Pigna": [
+        {
+          "titulo": "La Vida por la Patria (Vol. 2)",
+          "duracion_minutos": 511.55,
+          "vistas": 1200,
+          "url": "https://www.youtube.com/watch?v=IZ3PtempoQE",
+          "genero": "historia_biografia",
+          "es_multivolumen": true,
+          "volumen": null
+        },
+        {
+          "titulo": "La Vida por la Patria (Vol. 1)",
+          "duracion_minutos": 453.43333333333334,
+          "vistas": 3900,
+          "url": "https://www.youtube.com/watch?v=vLJEQ7T1Mjc",
+          "genero": "historia_biografia",
+          "es_multivolumen": true,
+          "volumen": null
+        }
+      ],
+      "Félix Luna": [
+        {
+          "titulo": "Sarmiento y sus fantasmas",
+          "duracion_minutos": 384.75,
+          "vistas": 2600,
+          "url": "https://www.youtube.com/watch?v=YyJBpDtkE0s",
+          "genero": "historia_biografia",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Gabriela Mistral": [
+        {
+          "titulo": "Selección de Poesías",
+          "duracion_minutos": 91.73333333333333,
+          "vistas": 8800,
+          "url": "https://www.youtube.com/watch?v=_P1v4i2zAm8",
+          "genero": "poesia_espiritualidad",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Ray Bradbury": [
+        {
+          "titulo": "Crónicas Marcianas",
+          "duracion_minutos": 519.65,
+          "vistas": 163000,
+          "url": "https://www.youtube.com/watch?v=-N5twba7Eew",
+          "genero": "ciencia_ficcion",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ],
+      "Vicente Huidobro": [
+        {
+          "titulo": "Altazor o el viaje en paracaídas",
+          "duracion_minutos": 121.51666666666667,
+          "vistas": 1700,
+          "url": "https://www.youtube.com/watch?v=LJ8_g7Fwllc",
+          "genero": "poesia_espiritualidad",
+          "es_multivolumen": false,
+          "volumen": null
+        }
+      ]
+    },
+    "por_genero": {
+      "aventura": [
+        {
+          "titulo": "El Chancellor",
+          "autor": "Julio Verne",
+          "duracion_minutos": 395.68333333333334,
+          "vistas": 5100,
+          "url": "https://www.youtube.com/watch?v=lePnPfjQyu0"
+        }
+      ],
+      "ciencia_ficcion": [
+        {
+          "titulo": "La Máquina del Tiempo",
+          "autor": "H. G. Wells",
+          "duracion_minutos": 254.55,
+          "vistas": 5500,
+          "url": "https://www.youtube.com/watch?v=GdQ29ZKHtjc"
+        },
+        {
+          "titulo": "Viaje al centro de la Tierra",
+          "autor": "Julio Verne",
+          "duracion_minutos": 530.15,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=Hzk-2-Mowik"
+        },
+        {
+          "titulo": "La Guerra de los Mundos",
+          "autor": "H. G. Wells",
+          "duracion_minutos": 402.21666666666664,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=2kpD7efbXpc"
+        },
+        {
+          "titulo": "20.000 Leguas de Viaje Submarino (Vol. 2)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 562.7,
+          "vistas": 31000,
+          "url": "https://www.youtube.com/watch?v=mNS96h_SbK0"
+        },
+        {
+          "titulo": "20.000 Leguas de Viaje Submarino (Vol. 1)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 502.18333333333334,
+          "vistas": 109000,
+          "url": "https://www.youtube.com/watch?v=AHhBOULD9VE"
+        },
+        {
+          "titulo": "Crónicas Marcianas",
+          "autor": "Ray Bradbury",
+          "duracion_minutos": 519.65,
+          "vistas": 163000,
+          "url": "https://www.youtube.com/watch?v=-N5twba7Eew"
+        }
+      ],
+      "literatura_general": [
+        {
+          "titulo": "Cuento de Navidad",
+          "autor": "Charles Dickens",
+          "duracion_minutos": 213.03333333333333,
+          "vistas": 1600,
+          "url": "https://www.youtube.com/watch?v=gIW_EKgoAzw"
+        }
+      ],
+      "misterio_detective": [
+        {
+          "titulo": "Las memorias de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 689.6833333333333,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=a7zUSWA3h_g"
+        },
+        {
+          "titulo": "La Isla Misteriosa (Vol 2)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 706.0666666666667,
+          "vistas": 12000,
+          "url": "https://www.youtube.com/watch?v=HsYFvIjWUbU"
+        },
+        {
+          "titulo": "La Isla Misteriosa (Vol 1)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 701.1166666666667,
+          "vistas": 20000,
+          "url": "https://www.youtube.com/watch?v=6ww2fOCngO0"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Signo de los Cuatro",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 333.6,
+          "vistas": 14000,
+          "url": "https://www.youtube.com/watch?v=f2iZ8evSJ7Y"
+        },
+        {
+          "titulo": "Sherlock Holmes: Un estudio en escarlata",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 329.1166666666667,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=97WNyFWNcOE"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Valle del Terror",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 412.01666666666665,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=KlNg9Z2VvVo"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Sabueso de los Baskerville",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 424.0,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=FvemexmUvEM"
+        },
+        {
+          "titulo": "Las aventuras de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 729.7666666666667,
+          "vistas": 181000,
+          "url": "https://www.youtube.com/watch?v=Bk2AKmZ_QWg"
+        }
+      ],
+      "poesia_espiritualidad": [
+        {
+          "titulo": "Himno del Universo",
+          "autor": "Pierre Teilhard de Chardin",
+          "duracion_minutos": 96.73333333333333,
+          "vistas": 2500,
+          "url": "https://www.youtube.com/watch?v=PQiZHw-suwk"
+        },
+        {
+          "titulo": "El Profeta",
+          "autor": "Khalil Gibran",
+          "duracion_minutos": 102.38333333333334,
+          "vistas": 4900,
+          "url": "https://www.youtube.com/watch?v=YG1bM_HVrSA"
+        },
+        {
+          "titulo": "La luna nueva",
+          "autor": "Rabindranath Tagore",
+          "duracion_minutos": 65.1,
+          "vistas": 3300,
+          "url": "https://www.youtube.com/watch?v=noQNfFj2-xg"
+        },
+        {
+          "titulo": "Selección de Poesías",
+          "autor": "Gabriela Mistral",
+          "duracion_minutos": 91.73333333333333,
+          "vistas": 8800,
+          "url": "https://www.youtube.com/watch?v=_P1v4i2zAm8"
+        },
+        {
+          "titulo": "Ofrenda lírica (Gitánjali)",
+          "autor": "Rabindranath Tagore",
+          "duracion_minutos": 101.45,
+          "vistas": 6300,
+          "url": "https://www.youtube.com/watch?v=IPADsQ14SDA"
+        },
+        {
+          "titulo": "Altazor o el viaje en paracaídas",
+          "autor": "Vicente Huidobro",
+          "duracion_minutos": 121.51666666666667,
+          "vistas": 1700,
+          "url": "https://www.youtube.com/watch?v=LJ8_g7Fwllc"
+        }
+      ],
+      "literatura_terror": [
+        {
+          "titulo": "El extraño caso del Dr. Jekyll y Mr. Hyde",
+          "autor": "R. Stevenson",
+          "duracion_minutos": 193.01666666666668,
+          "vistas": 9100,
+          "url": "https://www.youtube.com/watch?v=m6-DidN-_Gs"
+        },
+        {
+          "titulo": "Los Crímenes de la calle Morgue",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 105.56666666666666,
+          "vistas": 6200,
+          "url": "https://www.youtube.com/watch?v=vca3rrOHuE8"
+        },
+        {
+          "titulo": "La Caída de la casa Usher",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 54.25,
+          "vistas": 5900,
+          "url": "https://www.youtube.com/watch?v=y_q3qGfwaqs"
+        },
+        {
+          "titulo": "El Corazón Delator",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 17.333333333333332,
+          "vistas": 2800,
+          "url": "https://www.youtube.com/watch?v=iZl-lUiL8wE"
+        },
+        {
+          "titulo": "7 Sonetos medicinales y selección de poesías",
+          "autor": "Almafuerte",
+          "duracion_minutos": 24.916666666666668,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=2OnXcjqWWJ4"
+        }
+      ],
+      "literatura_clasica": [
+        {
+          "titulo": "Vida de Don Quijote y Sancho (Parte 2)",
+          "autor": "Cervantes / Unamuno",
+          "duracion_minutos": 384.45,
+          "vistas": 2000,
+          "url": "https://www.youtube.com/watch?v=HtEDCDJMWQs"
+        },
+        {
+          "titulo": "Vida de Don Quijote y Sancho (Parte 1)",
+          "autor": "Cervantes / Unamuno",
+          "duracion_minutos": 344.81666666666666,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=48ZGUEPV0F4"
+        },
+        {
+          "titulo": "La Metamorfosis",
+          "autor": "Franz Kafka",
+          "duracion_minutos": 136.83333333333334,
+          "vistas": 19000,
+          "url": "https://www.youtube.com/watch?v=DDqEApv0o5M"
+        },
+        {
+          "titulo": "El retrato de Dorian Gray",
+          "autor": "Oscar Wilde",
+          "duracion_minutos": 583.3666666666667,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=P1IQ7Giw-mI"
+        },
+        {
+          "titulo": "El fantasma de Canterville",
+          "autor": "Oscar Wilde",
+          "duracion_minutos": 92.08333333333333,
+          "vistas": 7300,
+          "url": "https://www.youtube.com/watch?v=yFOcVHY6b_w"
+        }
+      ],
+      "distopia": [
+        {
+          "titulo": "1984 (Parte 3)",
+          "autor": "George Orwell",
+          "duracion_minutos": 182.81666666666666,
+          "vistas": 2300,
+          "url": "https://www.youtube.com/watch?v=WLdDdfN1l9A"
+        },
+        {
+          "titulo": "1984 (Parte 2)",
+          "autor": "George Orwell",
+          "duracion_minutos": 303.3,
+          "vistas": 3200,
+          "url": "https://www.youtube.com/watch?v=LbUGWlVBgHM"
+        },
+        {
+          "titulo": "1984 (Parte 1)",
+          "autor": "George Orwell",
+          "duracion_minutos": 267.8,
+          "vistas": 8100,
+          "url": "https://www.youtube.com/watch?v=LG2o6hE2p6g"
+        },
+        {
+          "titulo": "Rebelión en la Granja",
+          "autor": "George Orwell",
+          "duracion_minutos": 237.1,
+          "vistas": 70000,
+          "url": "https://www.youtube.com/watch?v=rwctAAL3wDc"
+        }
+      ],
+      "historia_biografia": [
+        {
+          "titulo": "El Diario de Ana Frank",
+          "autor": "Ana Frank",
+          "duracion_minutos": 226.16666666666666,
+          "vistas": 11000,
+          "url": "https://www.youtube.com/watch?v=Z6g0iw4_B1Y"
+        },
+        {
+          "titulo": "La Vida por la Patria (Vol. 2)",
+          "autor": "Felipe Pigna",
+          "duracion_minutos": 511.55,
+          "vistas": 1200,
+          "url": "https://www.youtube.com/watch?v=IZ3PtempoQE"
+        },
+        {
+          "titulo": "La Vida por la Patria (Vol. 1)",
+          "autor": "Felipe Pigna",
+          "duracion_minutos": 453.43333333333334,
+          "vistas": 3900,
+          "url": "https://www.youtube.com/watch?v=vLJEQ7T1Mjc"
+        },
+        {
+          "titulo": "Sarmiento y sus fantasmas",
+          "autor": "Félix Luna",
+          "duracion_minutos": 384.75,
+          "vistas": 2600,
+          "url": "https://www.youtube.com/watch?v=YyJBpDtkE0s"
+        }
+      ],
+      "literatura_argentina": [
+        {
+          "titulo": "El Hacedor",
+          "autor": "Jorge Luis Borges",
+          "duracion_minutos": 117.31666666666666,
+          "vistas": 10000,
+          "url": "https://www.youtube.com/watch?v=LMl_dOKxIW8"
+        },
+        {
+          "titulo": "Cuentos de Amor, de Locura y de Muerte",
+          "autor": "Horacio Quiroga",
+          "duracion_minutos": 97.51666666666667,
+          "vistas": 18000,
+          "url": "https://www.youtube.com/watch?v=MB8YR2dSKh8"
+        },
+        {
+          "titulo": "En Memoria de Paulina",
+          "autor": "Adolfo Bioy Casares",
+          "duracion_minutos": 41.15,
+          "vistas": 3700,
+          "url": "https://www.youtube.com/watch?v=JbGHYU8EBZ8"
+        },
+        {
+          "titulo": "La Invención de Morel",
+          "autor": "Adolfo Bioy Casares",
+          "duracion_minutos": 212.01666666666668,
+          "vistas": 32000,
+          "url": "https://www.youtube.com/watch?v=J-GCcMzCxOg"
+        }
+      ],
+      "cuento_infantil": [
+        {
+          "titulo": "El Principito",
+          "autor": "Antoine de Saint-Exupéry",
+          "duracion_minutos": 112.11666666666666,
+          "vistas": 25000,
+          "url": "https://www.youtube.com/watch?v=53ewXYOAkJM"
+        }
+      ]
+    },
+    "por_duracion": {
+      "cuentos_cortos": [
+        {
+          "titulo": "La Caída de la casa Usher",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 54.25,
+          "duracion_horas": 0.9,
+          "vistas": 5900,
+          "url": "https://www.youtube.com/watch?v=y_q3qGfwaqs"
+        },
+        {
+          "titulo": "La luna nueva",
+          "autor": "Rabindranath Tagore",
+          "duracion_minutos": 65.1,
+          "duracion_horas": 1.1,
+          "vistas": 3300,
+          "url": "https://www.youtube.com/watch?v=noQNfFj2-xg"
+        },
+        {
+          "titulo": "El Corazón Delator",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 17.333333333333332,
+          "duracion_horas": 0.3,
+          "vistas": 2800,
+          "url": "https://www.youtube.com/watch?v=iZl-lUiL8wE"
+        },
+        {
+          "titulo": "7 Sonetos medicinales y selección de poesías",
+          "autor": "Almafuerte",
+          "duracion_minutos": 24.916666666666668,
+          "duracion_horas": 0.4,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=2OnXcjqWWJ4"
+        },
+        {
+          "titulo": "En Memoria de Paulina",
+          "autor": "Adolfo Bioy Casares",
+          "duracion_minutos": 41.15,
+          "duracion_horas": 0.7,
+          "vistas": 3700,
+          "url": "https://www.youtube.com/watch?v=JbGHYU8EBZ8"
+        }
+      ],
+      "novelas_cortas": [
+        {
+          "titulo": "La Máquina del Tiempo",
+          "autor": "H. G. Wells",
+          "duracion_minutos": 254.55,
+          "duracion_horas": 4.2,
+          "vistas": 5500,
+          "url": "https://www.youtube.com/watch?v=GdQ29ZKHtjc"
+        },
+        {
+          "titulo": "Cuento de Navidad",
+          "autor": "Charles Dickens",
+          "duracion_minutos": 213.03333333333333,
+          "duracion_horas": 3.6,
+          "vistas": 1600,
+          "url": "https://www.youtube.com/watch?v=gIW_EKgoAzw"
+        },
+        {
+          "titulo": "Himno del Universo",
+          "autor": "Pierre Teilhard de Chardin",
+          "duracion_minutos": 96.73333333333333,
+          "duracion_horas": 1.6,
+          "vistas": 2500,
+          "url": "https://www.youtube.com/watch?v=PQiZHw-suwk"
+        },
+        {
+          "titulo": "El extraño caso del Dr. Jekyll y Mr. Hyde",
+          "autor": "R. Stevenson",
+          "duracion_minutos": 193.01666666666668,
+          "duracion_horas": 3.2,
+          "vistas": 9100,
+          "url": "https://www.youtube.com/watch?v=m6-DidN-_Gs"
+        },
+        {
+          "titulo": "El Profeta",
+          "autor": "Khalil Gibran",
+          "duracion_minutos": 102.38333333333334,
+          "duracion_horas": 1.7,
+          "vistas": 4900,
+          "url": "https://www.youtube.com/watch?v=YG1bM_HVrSA"
+        },
+        {
+          "titulo": "La Metamorfosis",
+          "autor": "Franz Kafka",
+          "duracion_minutos": 136.83333333333334,
+          "duracion_horas": 2.3,
+          "vistas": 19000,
+          "url": "https://www.youtube.com/watch?v=DDqEApv0o5M"
+        },
+        {
+          "titulo": "Los Crímenes de la calle Morgue",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 105.56666666666666,
+          "duracion_horas": 1.8,
+          "vistas": 6200,
+          "url": "https://www.youtube.com/watch?v=vca3rrOHuE8"
+        },
+        {
+          "titulo": "1984 (Parte 3)",
+          "autor": "George Orwell",
+          "duracion_minutos": 182.81666666666666,
+          "duracion_horas": 3.0,
+          "vistas": 2300,
+          "url": "https://www.youtube.com/watch?v=WLdDdfN1l9A"
+        },
+        {
+          "titulo": "1984 (Parte 1)",
+          "autor": "George Orwell",
+          "duracion_minutos": 267.8,
+          "duracion_horas": 4.5,
+          "vistas": 8100,
+          "url": "https://www.youtube.com/watch?v=LG2o6hE2p6g"
+        },
+        {
+          "titulo": "El Diario de Ana Frank",
+          "autor": "Ana Frank",
+          "duracion_minutos": 226.16666666666666,
+          "duracion_horas": 3.8,
+          "vistas": 11000,
+          "url": "https://www.youtube.com/watch?v=Z6g0iw4_B1Y"
+        },
+        {
+          "titulo": "Rebelión en la Granja",
+          "autor": "George Orwell",
+          "duracion_minutos": 237.1,
+          "duracion_horas": 4.0,
+          "vistas": 70000,
+          "url": "https://www.youtube.com/watch?v=rwctAAL3wDc"
+        },
+        {
+          "titulo": "El Hacedor",
+          "autor": "Jorge Luis Borges",
+          "duracion_minutos": 117.31666666666666,
+          "duracion_horas": 2.0,
+          "vistas": 10000,
+          "url": "https://www.youtube.com/watch?v=LMl_dOKxIW8"
+        },
+        {
+          "titulo": "El fantasma de Canterville",
+          "autor": "Oscar Wilde",
+          "duracion_minutos": 92.08333333333333,
+          "duracion_horas": 1.5,
+          "vistas": 7300,
+          "url": "https://www.youtube.com/watch?v=yFOcVHY6b_w"
+        },
+        {
+          "titulo": "Cuentos de Amor, de Locura y de Muerte",
+          "autor": "Horacio Quiroga",
+          "duracion_minutos": 97.51666666666667,
+          "duracion_horas": 1.6,
+          "vistas": 18000,
+          "url": "https://www.youtube.com/watch?v=MB8YR2dSKh8"
+        },
+        {
+          "titulo": "El Principito",
+          "autor": "Antoine de Saint-Exupéry",
+          "duracion_minutos": 112.11666666666666,
+          "duracion_horas": 1.9,
+          "vistas": 25000,
+          "url": "https://www.youtube.com/watch?v=53ewXYOAkJM"
+        },
+        {
+          "titulo": "La Invención de Morel",
+          "autor": "Adolfo Bioy Casares",
+          "duracion_minutos": 212.01666666666668,
+          "duracion_horas": 3.5,
+          "vistas": 32000,
+          "url": "https://www.youtube.com/watch?v=J-GCcMzCxOg"
+        },
+        {
+          "titulo": "Selección de Poesías",
+          "autor": "Gabriela Mistral",
+          "duracion_minutos": 91.73333333333333,
+          "duracion_horas": 1.5,
+          "vistas": 8800,
+          "url": "https://www.youtube.com/watch?v=_P1v4i2zAm8"
+        },
+        {
+          "titulo": "Ofrenda lírica (Gitánjali)",
+          "autor": "Rabindranath Tagore",
+          "duracion_minutos": 101.45,
+          "duracion_horas": 1.7,
+          "vistas": 6300,
+          "url": "https://www.youtube.com/watch?v=IPADsQ14SDA"
+        },
+        {
+          "titulo": "Altazor o el viaje en paracaídas",
+          "autor": "Vicente Huidobro",
+          "duracion_minutos": 121.51666666666667,
+          "duracion_horas": 2.0,
+          "vistas": 1700,
+          "url": "https://www.youtube.com/watch?v=LJ8_g7Fwllc"
+        }
+      ],
+      "novelas_largas": [
+        {
+          "titulo": "El Chancellor",
+          "autor": "Julio Verne",
+          "duracion_minutos": 395.68333333333334,
+          "duracion_horas": 6.6,
+          "vistas": 5100,
+          "url": "https://www.youtube.com/watch?v=lePnPfjQyu0"
+        },
+        {
+          "titulo": "Las memorias de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 689.6833333333333,
+          "duracion_horas": 11.5,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=a7zUSWA3h_g"
+        },
+        {
+          "titulo": "La Isla Misteriosa (Vol 2)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 706.0666666666667,
+          "duracion_horas": 11.8,
+          "vistas": 12000,
+          "url": "https://www.youtube.com/watch?v=HsYFvIjWUbU"
+        },
+        {
+          "titulo": "La Isla Misteriosa (Vol 1)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 701.1166666666667,
+          "duracion_horas": 11.7,
+          "vistas": 20000,
+          "url": "https://www.youtube.com/watch?v=6ww2fOCngO0"
+        },
+        {
+          "titulo": "Vida de Don Quijote y Sancho (Parte 2)",
+          "autor": "Cervantes / Unamuno",
+          "duracion_minutos": 384.45,
+          "duracion_horas": 6.4,
+          "vistas": 2000,
+          "url": "https://www.youtube.com/watch?v=HtEDCDJMWQs"
+        },
+        {
+          "titulo": "Vida de Don Quijote y Sancho (Parte 1)",
+          "autor": "Cervantes / Unamuno",
+          "duracion_minutos": 344.81666666666666,
+          "duracion_horas": 5.7,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=48ZGUEPV0F4"
+        },
+        {
+          "titulo": "El retrato de Dorian Gray",
+          "autor": "Oscar Wilde",
+          "duracion_minutos": 583.3666666666667,
+          "duracion_horas": 9.7,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=P1IQ7Giw-mI"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Signo de los Cuatro",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 333.6,
+          "duracion_horas": 5.6,
+          "vistas": 14000,
+          "url": "https://www.youtube.com/watch?v=f2iZ8evSJ7Y"
+        },
+        {
+          "titulo": "Sherlock Holmes: Un estudio en escarlata",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 329.1166666666667,
+          "duracion_horas": 5.5,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=97WNyFWNcOE"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Valle del Terror",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 412.01666666666665,
+          "duracion_horas": 6.9,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=KlNg9Z2VvVo"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Sabueso de los Baskerville",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 424.0,
+          "duracion_horas": 7.1,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=FvemexmUvEM"
+        },
+        {
+          "titulo": "Viaje al centro de la Tierra",
+          "autor": "Julio Verne",
+          "duracion_minutos": 530.15,
+          "duracion_horas": 8.8,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=Hzk-2-Mowik"
+        },
+        {
+          "titulo": "La Guerra de los Mundos",
+          "autor": "H. G. Wells",
+          "duracion_minutos": 402.21666666666664,
+          "duracion_horas": 6.7,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=2kpD7efbXpc"
+        },
+        {
+          "titulo": "Las aventuras de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 729.7666666666667,
+          "duracion_horas": 12.2,
+          "vistas": 181000,
+          "url": "https://www.youtube.com/watch?v=Bk2AKmZ_QWg"
+        },
+        {
+          "titulo": "20.000 Leguas de Viaje Submarino (Vol. 2)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 562.7,
+          "duracion_horas": 9.4,
+          "vistas": 31000,
+          "url": "https://www.youtube.com/watch?v=mNS96h_SbK0"
+        },
+        {
+          "titulo": "20.000 Leguas de Viaje Submarino (Vol. 1)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 502.18333333333334,
+          "duracion_horas": 8.4,
+          "vistas": 109000,
+          "url": "https://www.youtube.com/watch?v=AHhBOULD9VE"
+        },
+        {
+          "titulo": "1984 (Parte 2)",
+          "autor": "George Orwell",
+          "duracion_minutos": 303.3,
+          "duracion_horas": 5.1,
+          "vistas": 3200,
+          "url": "https://www.youtube.com/watch?v=LbUGWlVBgHM"
+        },
+        {
+          "titulo": "La Vida por la Patria (Vol. 2)",
+          "autor": "Felipe Pigna",
+          "duracion_minutos": 511.55,
+          "duracion_horas": 8.5,
+          "vistas": 1200,
+          "url": "https://www.youtube.com/watch?v=IZ3PtempoQE"
+        },
+        {
+          "titulo": "La Vida por la Patria (Vol. 1)",
+          "autor": "Felipe Pigna",
+          "duracion_minutos": 453.43333333333334,
+          "duracion_horas": 7.6,
+          "vistas": 3900,
+          "url": "https://www.youtube.com/watch?v=vLJEQ7T1Mjc"
+        },
+        {
+          "titulo": "Sarmiento y sus fantasmas",
+          "autor": "Félix Luna",
+          "duracion_minutos": 384.75,
+          "duracion_horas": 6.4,
+          "vistas": 2600,
+          "url": "https://www.youtube.com/watch?v=YyJBpDtkE0s"
+        },
+        {
+          "titulo": "Crónicas Marcianas",
+          "autor": "Ray Bradbury",
+          "duracion_minutos": 519.65,
+          "duracion_horas": 8.7,
+          "vistas": 163000,
+          "url": "https://www.youtube.com/watch?v=-N5twba7Eew"
+        }
+      ]
+    }
+  },
+  "informacion_dominio_publico": {
+    "criterios_dominio_publico": {
+      "regla_general": "Obra pasa a dominio público 70 años después de la muerte del autor",
+      "excepciones": "Algunos países tienen reglas diferentes",
+      "beneficios": [
+        "Libre uso y distribución",
+        "No requiere permisos de copyright",
+        "Preservación cultural",
+        "Acceso educativo gratuito"
+      ]
+    },
+    "autores_analizados": {
+      "Arthur Conan Doyle": {
+        "muerte": 1930,
+        "dominio_publico": true,
+        "año_dp": 2001
+      },
+      "Julio Verne": {
+        "muerte": 1905,
+        "dominio_publico": true,
+        "año_dp": 1976
+      },
+      "H. G. Wells": {
+        "muerte": 1946,
+        "dominio_publico": true,
+        "año_dp": 2017
+      },
+      "Edgar Allan Poe": {
+        "muerte": 1849,
+        "dominio_publico": true,
+        "año_dp": 1920
+      },
+      "Charles Dickens": {
+        "muerte": 1870,
+        "dominio_publico": true,
+        "año_dp": 1941
+      },
+      "Oscar Wilde": {
+        "muerte": 1900,
+        "dominio_publico": true,
+        "año_dp": 1971
+      },
+      "Franz Kafka": {
+        "muerte": 1924,
+        "dominio_publico": true,
+        "año_dp": 1995
+      },
+      "George Orwell": {
+        "muerte": 1950,
+        "dominio_publico": true,
+        "año_dp": 2021
+      },
+      "Khalil Gibran": {
+        "muerte": 1931,
+        "dominio_publico": true,
+        "año_dp": 2002
+      },
+      "Rabindranath Tagore": {
+        "muerte": 1941,
+        "dominio_publico": true,
+        "año_dp": 2012
+      }
+    },
+    "recomendaciones": [
+      "Verificar status legal en jurisdicción específica",
+      "Documentar fuentes de dominio público",
+      "Incluir información educativa sobre cada obra",
+      "Respetar derechos morales del autor cuando apliquen"
+    ]
+  },
+  "mejores_practicas_web": {
+    "estructura_recomendada": {
+      "pagina_inicio": [
+        "Presentación de Horacio Lanci",
+        "Audiolibros destacados",
+        "Últimas incorporaciones",
+        "Testimonios de usuarios"
+      ],
+      "navegacion_principal": [
+        "Audiolibros por Autor",
+        "Audiolibros por Género",
+        "Análisis Musicales",
+        "Sobre Horacio Lanci",
+        "Blog/Noticias"
+      ],
+      "pagina_audiolibro": [
+        "Reproductor integrado de YouTube",
+        "Información de la obra",
+        "Biografía del autor",
+        "Obras relacionadas",
+        "Comentarios y valoraciones"
+      ]
+    },
+    "funcionalidades_esenciales": [
+      "Búsqueda avanzada por autor, género, duración",
+      "Filtros múltiples",
+      "Lista de favoritos/marcadores",
+      "Historial de reproducción",
+      "Recomendaciones personalizadas",
+      "Compartir en redes sociales",
+      "Descarga de información sobre las obras"
+    ],
+    "elementos_diferenciadores": [
+      "Información educativa sobre cada obra",
+      "Contexto histórico y cultural",
+      "Guías de lectura complementarias",
+      "Sección de análisis musical único",
+      "Biografía profesional del narrador",
+      "Certificaciones de dominio público"
+    ],
+    "optimizacion_seo": [
+      "Títulos optimizados por obra y autor",
+      "Descripciones ricas en metadatos",
+      "URLs amigables",
+      "Mapas del sitio XML",
+      "Schema markup para libros",
+      "Optimización para búsqueda por voz"
+    ]
+  },
+  "recomendaciones_implementacion": {
+    "prioridad_alta": [
+      "Implementar catálogo por autor con Arthur Conan Doyle como destacado",
+      "Crear sección especial para Julio Verne (autor con más obras)",
+      "Destacar contenido de dominio público con información educativa",
+      "Integrar reproductor de YouTube con información contextual"
+    ],
+    "prioridad_media": [
+      "Desarrollar sistema de filtros por género y duración",
+      "Implementar búsqueda avanzada",
+      "Crear sección de análisis musicales separada",
+      "Agregar biografías de autores"
+    ],
+    "prioridad_baja": [
+      "Sistema de valoraciones y comentarios",
+      "Recomendaciones personalizadas",
+      "Integración con redes sociales",
+      "App móvil complementaria"
+    ]
+  }
+}

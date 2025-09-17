@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    
+    /* Variables de tema oscuro global - Inspirado en YouTube modo oscuro */
+    --background: 210 11% 15%;              /* #1e1e1e - Fondo principal gris oscuro */
+    --foreground: 210 11% 90%;              /* #e5e5e5 - Texto principal */
+    --muted: 210 11% 18%;                   /* #262626 - Fondos secundarios */
+    --muted-foreground: 210 11% 65%;       /* #9ca3af - Texto secundario */
+    --popover: 210 11% 12%;                 /* #181818 - Fondos de popover */
+    --popover-foreground: 210 11% 90%;     /* #e5e5e5 - Texto de popover */
+    --card: 210 11% 12%;                    /* #181818 - Fondos de tarjetas */
+    --card-foreground: 210 11% 90%;        /* #e5e5e5 - Texto de tarjetas */
+    --border: 210 11% 25%;                  /* #3a3a3a - Bordes */
+    --input: 210 11% 18%;                   /* #262626 - Fondos de input */
+    --ring: 43 63% 57%;                     /* #D7AA4E - Anillos de foco (dorado) */
+    
+    /* Paleta inspirada en Sherlock Holmes - Colores vintage elegantes */
+    --primary: 43 63% 57%;                  /* #D7AA4E - Dorado vintage (reemplaza verde) */
+    --primary-foreground: 210 11% 12%;     /* #181818 - Texto sobre dorado */
+    --secondary: 40 50% 45%;                /* #9e8a4a - Bronce oscuro (reemplaza azul) */
+    --secondary-foreground: 210 11% 90%;   /* #e5e5e5 - Texto sobre bronce */
+    --accent: 43 63% 57%;                   /* #D7AA4E - Cobre (reemplaza naranja) */
+    --accent-foreground: 210 11% 12%;      /* #181818 - Texto sobre cobre */
+    --destructive: 0 62% 30%;               /* #7f1d1d - Rojo oscuro */
+    --destructive-foreground: 210 11% 90%; /* #e5e5e5 - Texto sobre rojo */
+    
+    /* Variables de sidebar para tema oscuro */
+    --sidebar-background: 210 11% 12%;      /* #181818 */
+    --sidebar-foreground: 210 11% 90%;     /* #e5e5e5 */
+    --sidebar-primary: 43 63% 57%;         /* #D7AA4E */
+    --sidebar-primary-foreground: 210 11% 12%; /* #181818 */
+    --sidebar-accent: 210 11% 18%;         /* #262626 */
+    --sidebar-accent-foreground: 210 11% 90%; /* #e5e5e5 */
+    --sidebar-border: 210 11% 25%;         /* #3a3a3a */
+    --sidebar-ring: 43 63% 57%;            /* #D7AA4E */
+  }
+}
+
+/* Animación wiggle personalizada para elementos decorativos */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 4s ease-in-out infinite;
+}
+
+/* Estilos para la sección Sobre Horacio - Background con imagen */
+.sobre-horacio-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/fondo_home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.sobre-horacio-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Clase personalizada para hover en títulos de audiolibros */
+.audiobook-title-hover:hover {
+  color: #b19430 !important;
+}
+
+/* Mejoras de scroll y layout */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Corregir problemas de scroll */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scroll suave para enlaces */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* Corregir overflow en contenedores */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Asegurar que las imágenes no causen overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Corregir scroll en móviles */
+@media (max-width: 768px) {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Prevenir zoom en inputs en iOS */
+  input, select, textarea {
+    font-size: 16px;
+  }
+}
+
+/* Asegurar que el footer esté siempre al final */
+main {
+  flex: 1;
+  min-height: calc(100vh - 200px);
+}
+
+/* Mejorar el render de texto */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Corregir problemas de scroll en contenedores flex */
+.flex {
+  min-width: 0;
+}
+
+/* Prevenir scroll horizontal en elementos específicos */
+.w-full {
+  max-width: 100%;
+}
+

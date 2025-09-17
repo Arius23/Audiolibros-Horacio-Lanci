@@ -1,0 +1,361 @@
+{
+  "colecciones": {
+    "julio_verne_viajes_extraordinarios": {
+      "id": "julio_verne_viajes_extraordinarios",
+      "titulo": "Julio Verne: Viajes Extraordinarios",
+      "descripcion": "Aventuras épicas y exploraciones científicas del maestro de la ciencia ficción",
+      "imagen": "/images/coleccion-julio-verne.jpg",
+      "color_fondo": "bg-violet-600",
+      "audiolibros": [
+        {
+          "titulo": "20.000 leguas de viaje submarino (Volumen 1)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 502.18,
+          "vistas": 109000,
+          "url": "https://www.youtube.com/watch?v=AHhBOULD9VE",
+          "thumbnail": "https://img.youtube.com/vi/AHhBOULD9VE/maxresdefault.jpg"
+        },
+        {
+          "titulo": "20.000 leguas de viaje submarino (Volumen 2)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 562.7,
+          "vistas": 31000,
+          "url": "https://www.youtube.com/watch?v=mNS96h_SbK0",
+          "thumbnail": "https://img.youtube.com/vi/mNS96h_SbK0/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Viaje al centro de la tierra",
+          "autor": "Julio Verne",
+          "duracion_minutos": 530.15,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=Hzk-2-Mowik",
+          "thumbnail": "https://img.youtube.com/vi/Hzk-2-Mowik/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El Chancellor",
+          "autor": "Julio Verne",
+          "duracion_minutos": 395.68,
+          "vistas": 5100,
+          "url": "https://www.youtube.com/watch?v=lePnPfjQyu0",
+          "thumbnail": "https://img.youtube.com/vi/lePnPfjQyu0/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La isla misteriosa (Volumen 1)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 701.12,
+          "vistas": 20000,
+          "url": "https://www.youtube.com/watch?v=6ww2fOCngO0",
+          "thumbnail": "https://img.youtube.com/vi/6ww2fOCngO0/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La isla misteriosa (Volumen 2)",
+          "autor": "Julio Verne",
+          "duracion_minutos": 706.07,
+          "vistas": 12000,
+          "url": "https://www.youtube.com/watch?v=HsYFvIjWUbU",
+          "thumbnail": "https://img.youtube.com/vi/HsYFvIjWUbU/maxresdefault.jpg"
+        }
+      ]
+    },
+    "clasicos_imprescindibles": {
+      "id": "clasicos_imprescindibles",
+      "titulo": "Clásicos imprescindibles",
+      "descripcion": "Las obras más importantes que todo amante de la literatura debe conocer",
+      "imagen": "/images/coleccion-clasicos.jpg",
+      "color_fondo": "bg-violet-600",
+      "audiolibros": [
+        {
+          "titulo": "Crónicas marcianas",
+          "autor": "Ray Bradbury",
+          "duracion_minutos": 519.65,
+          "vistas": 163000,
+          "url": "https://www.youtube.com/watch?v=-N5twba7Eew",
+          "thumbnail": "https://img.youtube.com/vi/-N5twba7Eew/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Cuento de Navidad",
+          "autor": "Charles Dickens",
+          "duracion_minutos": 213.03,
+          "vistas": 1600,
+          "url": "https://www.youtube.com/watch?v=gIW_EKgoAzw",
+          "thumbnail": "https://img.youtube.com/vi/gIW_EKgoAzw/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El Chancellor",
+          "autor": "Julio Verne",
+          "duracion_minutos": 395.68,
+          "vistas": 5100,
+          "url": "https://www.youtube.com/watch?v=lePnPfjQyu0",
+          "thumbnail": "https://img.youtube.com/vi/lePnPfjQyu0/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La máquina del tiempo",
+          "autor": "H. G. Wells",
+          "duracion_minutos": 254.55,
+          "vistas": 5500,
+          "url": "https://www.youtube.com/watch?v=GdQ29ZKHtjc",
+          "thumbnail": "https://img.youtube.com/vi/GdQ29ZKHtjc/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La guerra de los mundos",
+          "autor": "H. G. Wells",
+          "duracion_minutos": 402.22,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=2kpD7efbXpc",
+          "thumbnail": "https://img.youtube.com/vi/2kpD7efbXpc/maxresdefault.jpg"
+        },
+        {
+          "titulo": "20.000 leguas de viaje submarino",
+          "autor": "Julio Verne",
+          "duracion_minutos": 1064.88,
+          "vistas": 140000,
+          "url": "https://www.youtube.com/watch?v=AHhBOULD9VE",
+          "thumbnail": "https://img.youtube.com/vi/AHhBOULD9VE/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Las aventuras de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 729.77,
+          "vistas": 181000,
+          "url": "https://www.youtube.com/watch?v=Bk2AKmZ_QWg",
+          "thumbnail": "https://img.youtube.com/vi/Bk2AKmZ_QWg/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La metamorfosis",
+          "autor": "Franz Kafka",
+          "duracion_minutos": 136.83,
+          "vistas": 19000,
+          "url": "https://www.youtube.com/watch?v=DDqEApv0o5M",
+          "thumbnail": "https://img.youtube.com/vi/DDqEApv0o5M/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El retrato de Dorian Gray",
+          "autor": "Oscar Wilde",
+          "duracion_minutos": 583.37,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=P1IQ7Giw-mI",
+          "thumbnail": "https://img.youtube.com/vi/P1IQ7Giw-mI/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El principito",
+          "autor": "Antoine de Saint-Exupéry",
+          "duracion_minutos": 112.12,
+          "vistas": 25000,
+          "url": "https://www.youtube.com/watch?v=53ewXYOAkJM",
+          "thumbnail": "https://img.youtube.com/vi/53ewXYOAkJM/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Sobre el diario de Ana Frank",
+          "autor": "Ana Frank",
+          "duracion_minutos": 226.17,
+          "vistas": 11000,
+          "url": "https://www.youtube.com/watch?v=Z6g0iw4_B1Y",
+          "thumbnail": "https://img.youtube.com/vi/Z6g0iw4_B1Y/maxresdefault.jpg"
+        }
+      ]
+    },
+    "sherlock_holmes_collection": {
+      "id": "sherlock_holmes_collection",
+      "titulo": "SHERLOCK HOLMES, de Sir Arthur Conan Doyle",
+      "descripcion": "Una lista dedicada al detective más famoso de la historia. Acompaña a Sherlock y su inseparable amigo el Dr. Watson en la resolución de los misterios y acertijos más intrigantes, a través de su colección completa de novelas y cuentos.",
+      "imagen": "/images/coleccion-sherlock-holmes.jpg",
+      "color_fondo": "bg-violet-600",
+      "audiolibros": [
+        {
+          "titulo": "Las aventuras de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 729.77,
+          "vistas": 181000,
+          "url": "https://www.youtube.com/watch?v=Bk2AKmZ_QWg",
+          "thumbnail": "https://img.youtube.com/vi/Bk2AKmZ_QWg/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Sabueso de los Baskerville",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 424.0,
+          "vistas": 33000,
+          "url": "https://www.youtube.com/watch?v=FvemexmUvEM",
+          "thumbnail": "https://img.youtube.com/vi/FvemexmUvEM/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Valle del Terror",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 412.02,
+          "vistas": 23000,
+          "url": "https://www.youtube.com/watch?v=KlNg9Z2VvVo",
+          "thumbnail": "https://img.youtube.com/vi/KlNg9Z2VvVo/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Las memorias de Sherlock Holmes",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 689.68,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=a7zUSWA3h_g",
+          "thumbnail": "https://img.youtube.com/vi/a7zUSWA3h_g/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Sherlock Holmes: Un estudio en escarlata",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 329.12,
+          "vistas": 16000,
+          "url": "https://www.youtube.com/watch?v=97WNyFWNcOE",
+          "thumbnail": "https://img.youtube.com/vi/97WNyFWNcOE/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Sherlock Holmes: El Signo de los Cuatro",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 333.6,
+          "vistas": 14000,
+          "url": "https://www.youtube.com/watch?v=f2iZ8evSJ7Y",
+          "thumbnail": "https://img.youtube.com/vi/f2iZ8evSJ7Y/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El regreso de Sherlock Holmes (Volumen 1)",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 374.0,
+          "vistas": 4300,
+          "url": "https://www.youtube.com/watch?v=mO0rG_2Qjg4",
+          "thumbnail": "https://img.youtube.com/vi/mO0rG_2Qjg4/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El regreso de Sherlock Holmes (Volumen 2)",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 445.0,
+          "vistas": 3400,
+          "url": "https://www.youtube.com/watch?v=R5LkTG96sKA",
+          "thumbnail": "https://img.youtube.com/vi/R5LkTG96sKA/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Su última reverencia",
+          "autor": "Arthur Conan Doyle",
+          "duracion_minutos": 374.0,
+          "vistas": 4500,
+          "url": "https://www.youtube.com/watch?v=PbEr7XWqnxY",
+          "thumbnail": "https://img.youtube.com/vi/PbEr7XWqnxY/maxresdefault.jpg"
+        }
+      ]
+    },
+    "literatura_terror": {
+      "id": "literatura_terror",
+      "titulo": "Literatura de terror",
+      "descripcion": "Cuentos escalofriantes para los amantes del suspense y el horror",
+      "imagen": "/images/coleccion-terror.jpg",
+      "color_fondo": "bg-violet-600",
+      "audiolibros": [
+        {
+          "titulo": "Los crímenes de la calle morgue",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 105.57,
+          "vistas": 6200,
+          "url": "https://www.youtube.com/watch?v=vca3rrOHuE8",
+          "thumbnail": "https://img.youtube.com/vi/vca3rrOHuE8/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Cuentos de amor, de locura y de muerte",
+          "autor": "Horacio Quiroga",
+          "duracion_minutos": 97.52,
+          "vistas": 18000,
+          "url": "https://www.youtube.com/watch?v=MB8YR2dSKh8",
+          "thumbnail": "https://img.youtube.com/vi/MB8YR2dSKh8/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El extraño caso del Dr. Jekyll y Mr. Hyde",
+          "autor": "Robert Louis Stevenson",
+          "duracion_minutos": 193.02,
+          "vistas": 9100,
+          "url": "https://www.youtube.com/watch?v=m6-DidN-_Gs",
+          "thumbnail": "https://img.youtube.com/vi/m6-DidN-_Gs/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La caída de la casa usher",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 54.25,
+          "vistas": 5900,
+          "url": "https://www.youtube.com/watch?v=y_q3qGfwaqs",
+          "thumbnail": "https://img.youtube.com/vi/y_q3qGfwaqs/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El corazón delator",
+          "autor": "Edgar Allan Poe",
+          "duracion_minutos": 17.33,
+          "vistas": 2800,
+          "url": "https://www.youtube.com/watch?v=iZl-lUiL8wE",
+          "thumbnail": "https://img.youtube.com/vi/iZl-lUiL8wE/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El fantasma de Canterville",
+          "autor": "Oscar Wilde",
+          "duracion_minutos": 92.08,
+          "vistas": 7300,
+          "url": "https://www.youtube.com/watch?v=yFOcVHY6b_w",
+          "thumbnail": "https://img.youtube.com/vi/yFOcVHY6b_w/maxresdefault.jpg"
+        }
+      ]
+    },
+    "poesia_espiritualidad": {
+      "id": "poesia_espiritualidad",
+      "titulo": "Poesía y Espiritualidad",
+      "descripcion": "Explora la belleza interior y el poder de las palabras en nuestra selección de audiolibros completos de espiritualidad y poesía",
+      "imagen": "/images/coleccion-poesia.jpg",
+      "color_fondo": "bg-violet-600",
+      "audiolibros": [
+        {
+          "titulo": "Poesías de Gabriela Mistral",
+          "autor": "Gabriela Mistral",
+          "duracion_minutos": 91.73,
+          "vistas": 8800,
+          "url": "https://www.youtube.com/watch?v=_P1v4i2zAm8",
+          "thumbnail": "https://img.youtube.com/vi/_P1v4i2zAm8/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Almafuerte, el poeta indomable",
+          "autor": "Almafuerte",
+          "duracion_minutos": 24.92,
+          "vistas": 6500,
+          "url": "https://www.youtube.com/watch?v=2OnXcjqWWJ4",
+          "thumbnail": "https://img.youtube.com/vi/2OnXcjqWWJ4/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Ofrenda lírica (Gitánjali)",
+          "autor": "Rabindranath Tagore",
+          "duracion_minutos": 101.45,
+          "vistas": 6300,
+          "url": "https://www.youtube.com/watch?v=IPADsQ14SDA",
+          "thumbnail": "https://img.youtube.com/vi/IPADsQ14SDA/maxresdefault.jpg"
+        },
+        {
+          "titulo": "El Profeta",
+          "autor": "Khalil Gibran",
+          "duracion_minutos": 102.38,
+          "vistas": 4900,
+          "url": "https://www.youtube.com/watch?v=YG1bM_HVrSA",
+          "thumbnail": "https://img.youtube.com/vi/YG1bM_HVrSA/maxresdefault.jpg"
+        },
+        {
+          "titulo": "La luna nueva",
+          "autor": "Rabindranath Tagore",
+          "duracion_minutos": 65.1,
+          "vistas": 3300,
+          "url": "https://www.youtube.com/watch?v=noQNfFj2-xg",
+          "thumbnail": "https://img.youtube.com/vi/noQNfFj2-xg/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Himno del Universo",
+          "autor": "Pierre Teilhard de Chardin",
+          "duracion_minutos": 96.73,
+          "vistas": 2500,
+          "url": "https://www.youtube.com/watch?v=PQiZHw-suwk",
+          "thumbnail": "https://img.youtube.com/vi/PQiZHw-suwk/maxresdefault.jpg"
+        },
+        {
+          "titulo": "Altazor",
+          "autor": "Vicente Huidobro",
+          "duracion_minutos": 121.52,
+          "vistas": 1700,
+          "url": "https://www.youtube.com/watch?v=LJ8_g7Fwllc",
+          "thumbnail": "https://img.youtube.com/vi/LJ8_g7Fwllc/maxresdefault.jpg"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://audiolibros-horacio-lanci.com/sitemap.xml
+
+# Directrices específicas para bots de búsqueda
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bloquear contenido no necesario para indexación
+Disallow: /assets/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /charts/
+Disallow: /data/
+
+# Permitir contenido importante
+Allow: /biblioteca/
+Allow: /colecciones/
+Allow: /sobre-audiolibros/
+Allow: /sobre-horacio/
