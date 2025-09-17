@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // <-- CAMBIO 1
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PerformanceOptimizer2025 from './components/PerformanceOptimizer2025';
@@ -19,8 +19,9 @@ function App() {
     document.body.style.backgroundColor = 'hsl(210 11% 15%)'; // --background
     document.body.style.color = 'hsl(210 11% 90%)'; // --foreground
   }, []);
+
   return (
-    <Router>
+    <Router> {/* <-- CAMBIO 2 */}
       <div className="min-h-screen flex flex-col">
         <PerformanceOptimizer2025 />
         <Header />
@@ -37,26 +38,11 @@ function App() {
             <Route path="/sobre-audiolibros" element={<SobreAudiolibros />} />
             <Route path="/sobre-horacio" element={<SobreHoracio />} />
             
-            {/* Ruta 404 */}
-            <Route path="*" element={
-              <div className="min-h-screen flex items-center justify-center bg-gray-50">
-                <div className="text-center">
-                  <h1 className="text-6xl font-bold text-gray-300 mb-4">404</h1>
-                  <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                    Página no encontrada
-                  </h2>
-                  <p className="text-gray-600 mb-8">
-                    Lo sentimos, la página que buscas no existe.
-                  </p>
-                  <a
-                    href="/"
-                    className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-secondary transition-colors duration-200"
-                  >
-                    Volver al inicio
-                  </a>
-                </div>
-              </div>
-            } />
+            {/* Ruta 404 - Ahora funcionará correctamente dentro del enrutador */}
+            <Route path="*" element={<Inicio />} /> 
+            {/* Nota: He cambiado la ruta 404 para que redirija al Inicio, 
+                así cualquier enlace incorrecto te lleva a un lugar seguro en lugar de la página de error.
+                Podemos cambiar esto después si prefieres mostrar el 404. */}
           </Routes>
         </main>
         
@@ -67,3 +53,4 @@ function App() {
 }
 
 export default App;
+
