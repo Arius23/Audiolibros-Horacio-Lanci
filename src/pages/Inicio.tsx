@@ -14,7 +14,7 @@ const Inicio = () => {
     obtenerImagenAutorDesdeCanal,
     cargando: cargandoBase 
   } = useAudiolibros();
-  
+
   const {
     obtenerGenerosReorganizados,
     obtenerImagenGeneroDesdeCanal,
@@ -47,7 +47,7 @@ const Inicio = () => {
         title="Audiolibros de Dominio Público Gratis - Horacio Lanci | 77+ Clásicos"
         description="Descubre 77+ audiolibros clásicos gratis narrados profesionalmente por Horacio Lanci. Sherlock Holmes, Julio Verne, George Orwell y más. 258+ horas de literatura de calidad, 100% dominio público. Actualización automática desde YouTube."
         keywords="audiolibros gratis, dominio público, Sherlock Holmes, Julio Verne, George Orwell, literatura clásica, narración profesional, audiobooks español, libros gratis, Horacio Lanci, Edgar Allan Poe, Ray Bradbury"
-        image="/images/og-homepage.jpg"
+        image="images/og-homepage.jpg" // <-- ESTA ES LA LÍNEA QUE HE CORREGIDO
         url="/"
         type="website"
       />
@@ -73,7 +73,6 @@ const Inicio = () => {
               Grandes clásicos que han cautivado a miles de oyentes.
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {audiolibrosDestacados.slice(0, 6).map((audiolibro, index) => (
               <AudiolibroCard 
@@ -83,7 +82,6 @@ const Inicio = () => {
               />
             ))}
           </div>
-
           <div className="text-center">
             <Link
               to="/biblioteca/todos"
@@ -111,7 +109,6 @@ const Inicio = () => {
               el corazón de nuestra biblioteca.
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
             {autoresPopulares.map((autor, index) => (
               <Link
@@ -139,7 +136,6 @@ const Inicio = () => {
               </Link>
             ))}
           </div>
-
           <div className="text-center">
             <Link
               to="/biblioteca/autores"
@@ -167,7 +163,6 @@ const Inicio = () => {
               Encuentra el género que más te apasione.
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {generos.slice(0, 6).map((generoData) => (
               <Link
@@ -207,7 +202,6 @@ const Inicio = () => {
               </Link>
             ))}
           </div>
-
           <div className="text-center">
             <Link
               to="/biblioteca/generos"
