@@ -57,7 +57,7 @@ const Header = () => {
             <div className="relative">
               <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-[#D7AA4E]">
                 <img 
-                  src="/images/horacio-avatar.jpg" 
+                  src="images/horacio-avatar.jpg" 
                   alt="Horacio Lanci" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
