@@ -1,9 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = 'https://wleghthpjghhajzgivgp.supabase.co'
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndsZWdodGhwamdoaGFqemdpdmdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU0NTYzODcsImV4cCI6MjA3MTAzMjM4N30.ZhAnoKg2RMweWuiSY8s6U8bfbU-YAJ0tUT8pK1KYxGw'
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Tipos para las tablas de Supabase
 export interface YoutubeVideo {
