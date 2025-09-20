@@ -97,7 +97,7 @@ const HeroSection = () => {
       {/* Fondo con imagen - overlay ligero como en Sobre Audiolibros */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/background home books.jpg"
+          src="images/background home books.jpg"
           alt="Fondo vintage library"
           className="w-full h-full object-cover opacity-85"
         />
@@ -181,7 +181,7 @@ const HeroSection = () => {
           {/* Imagen de Horacio Lanci */}
           <div className="flex justify-center lg:justify-end w-full lg:mt-0">
             <img
-              src="/images/horacio-home.png"
+              src="images/horacio-home.png"
               alt="Maestro Horacio Lanci - Narrador profesional de audiolibros"
               className="w-full h-auto max-w-md lg:max-w-full object-contain"
               loading="lazy"
