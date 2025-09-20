@@ -181,7 +181,7 @@ const HeroSection = () => {
           {/* Imagen de Horacio Lanci */}
           <div className="flex justify-center lg:justify-end w-full lg:mt-0">
             <img
-              src="/images/horacio-home.png"
+              src="images/horacio-home.png"
               alt="Maestro Horacio Lanci - Narrador profesional de audiolibros"
               className="w-full h-auto max-w-md lg:max-w-full object-contain"
               loading="lazy"
