@@ -23,7 +23,7 @@ const SobreHoracio = () => {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <img
-              src="/images/horacio-sobre.jpg"
+              src="images/horacio-sobre.jpg"
               alt="Maestro Horacio Lanci"
               className="w-96 h-96 rounded-full mx-auto mb-6 border-4 border-primary shadow-xl object-cover"
             />
@@ -56,7 +56,7 @@ const SobreHoracio = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
-                  src="/images/pasion_literatura_horacio.png"
+                  src="images/pasion_literatura_horacio.png"
                   alt="Una Pasión por la Literatura"
                   className="w-full h-full object-cover"
                 />
@@ -149,7 +149,7 @@ const SobreHoracio = () => {
               
               <div className="md:order-2 relative h-64 md:h-auto">
                 <img
-                  src="/images/experiencia_profesional_horacio.png"
+                  src="images/experiencia_profesional_horacio.png"
                   alt="Experiencia Profesional"
                   className="w-full h-full object-cover"
                 />
@@ -195,7 +195,7 @@ const SobreHoracio = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
-                  src="/images/filosofia_mision_horacio.png"
+                  src="images/filosofia_mision_horacio.png"
                   alt="Filosofía y Misión"
                   className="w-full h-full object-cover"
                 />
@@ -288,7 +288,7 @@ const SobreHoracio = () => {
               
               <div className="md:order-2 relative h-64 md:h-auto">
                 <img
-                  src="/images/proceso_creativo_horacio.png"
+                  src="images/proceso_creativo_horacio.png"
                   alt="El Proceso Creativo"
                   className="w-full h-full object-cover"
                 />

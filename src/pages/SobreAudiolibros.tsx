@@ -113,7 +113,7 @@ const SobreAudiolibros = () => {
         {/* Fondo con imagen */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/background home books.jpg"
+            src="images/background home books.jpg"
             alt="Fondo vintage library"
             className="w-full h-full object-cover opacity-85"
           />
@@ -191,7 +191,7 @@ const SobreAudiolibros = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
-                  src="/images/audiolibros_dominio_publico.png"
+                  src="images/audiolibros_dominio_publico.png"
                   alt="Audiolibros de Dominio Público"
                   className="w-full h-full object-cover"
                 />
@@ -275,7 +275,7 @@ const SobreAudiolibros = () => {
               
               <div className="md:order-2 relative h-64 md:h-auto">
                 <img
-                  src="/images/marco_legal_internacional.png"
+                  src="images/marco_legal_internacional.png"
                   alt="Marco Legal Internacional"
                   className="w-full h-full object-cover"
                 />
@@ -289,7 +289,7 @@ const SobreAudiolibros = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
-                  src="/images/beneficios_escuchar.png"
+                  src="images/beneficios_escuchar.png"
                   alt="Beneficios de Escuchar"
                   className="w-full h-full object-cover"
                 />
@@ -409,7 +409,7 @@ const SobreAudiolibros = () => {
               
               <div className="md:order-2 relative h-48 md:h-48">
                 <img
-                  src="/images/proceso_seleccion.png"
+                  src="images/proceso_seleccion.png"
                   alt="Proceso de Selección"
                   className="w-full h-full object-cover object-bottom"
                   style={{objectPosition: '50% 85%'}}
@@ -424,7 +424,7 @@ const SobreAudiolibros = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
-                  src="/images/historia_evolucion.png"
+                  src="images/historia_evolucion.png"
                   alt="Historia y Evolución"
                   className="w-full h-full object-cover"
                 />
@@ -510,7 +510,7 @@ const SobreAudiolibros = () => {
               
               <div className="md:order-2 relative h-64 md:h-auto">
                 <img
-                  src="/images/guia_generos.png"
+                  src="images/guia_generos.png"
                   alt="Guía de Géneros"
                   className="w-full h-full object-cover"
                 />
