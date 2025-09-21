@@ -9,7 +9,8 @@ const SobreAudiolibros = () => {
   useEffect(() => {
     const cargarContenido = async () => {
       try {
-        const response = await fetch('/data/contenido_educativo_audiolibros.md');
+        // Ruta relativa sin barra inicial para funcionar en GitHub Pages
+        const response = await fetch('data/contenido_educativo_audiolibros.md');
         const texto = await response.text();
         setContenidoEducativo(texto);
       } catch (error) {
@@ -38,7 +39,7 @@ const SobreAudiolibros = () => {
       titulo: '¿Qué son los Audiolibros de Dominio Público?',
       icono: BookOpen,
       descripcion: 'Comprende qué significa "dominio público" y por qué estas obras son libres para todos.',
-      imagen: '/images/audiolibros_dominio_publico.png',
+      imagen: 'images/audiolibros_dominio_publico.png',
       seccionId: 'definicion-conceptos',
       colorIcono: '#D7AA4E'
     },
@@ -46,15 +47,15 @@ const SobreAudiolibros = () => {
       titulo: 'Marco Legal Internacional',
       icono: Gavel,
       descripcion: 'Conoce las leyes internacionales que protegen y liberan las obras literarias.',
-      imagen: '/images/marco_legal_internacional.png',
+      imagen: 'images/marco_legal_internacional.png',
       seccionId: 'marco-legal',
-      colorIcono: '#7f40b7'
+      colorIcono: '#D7AA4E'
     },
     {
       titulo: 'Historia y Evolución',
       icono: Clock,
       descripcion: 'Descubre cómo han evolucionado los audiolibros desde sus inicios hasta hoy.',
-      imagen: '/images/historia_evolucion.png',
+      imagen: 'images/historia_evolucion.png',
       seccionId: 'historia-evolucion',
       colorIcono: '#D7AA4E'
     },
@@ -62,15 +63,15 @@ const SobreAudiolibros = () => {
       titulo: 'Beneficios de Escuchar Literatura',
       icono: Heart,
       descripcion: 'Explora los beneficios cognitivos, emocionales y educativos de los audiolibros.',
-      imagen: '/images/beneficios_escuchar.png',
+      imagen: 'images/beneficios_escuchar.png',
       seccionId: 'beneficios-literatura',
-      colorIcono: '#7f40b7'
+      colorIcono: '#D7AA4E'
     },
     {
       titulo: 'El Proceso de Selección',
       icono: Award,
       descripcion: 'Conoce cómo Horacio Lanci selecciona y prepara cada obra para su narración.',
-      imagen: '/images/proceso_seleccion.png',
+      imagen: 'images/proceso_seleccion.png',
       seccionId: 'proceso-seleccion',
       colorIcono: '#D7AA4E'
     },
@@ -78,9 +79,9 @@ const SobreAudiolibros = () => {
       titulo: 'Guía por Géneros Literarios',
       icono: Lightbulb,
       descripcion: 'Aprende sobre los diferentes géneros literarios disponibles en nuestra biblioteca.',
-      imagen: '/images/guia_generos.png',
+      imagen: 'images/guia_generos.png',
       seccionId: 'guia-generos',
-      colorIcono: '#7f40b7'
+      colorIcono: '#D7AA4E'
     }
   ];
 
@@ -102,22 +103,22 @@ const SobreAudiolibros = () => {
         title="¿Qué son los Audiolibros de Dominio Público? | Guía Completa"
         description="Descubre todo sobre los audiolibros de dominio público: qué son, marco legal, historia, beneficios y proceso de creación. Guía educativa completa por Horacio Lanci."
         keywords="audiolibros dominio público, qué es dominio público, audiolibros gratis legales, marco legal audiolibros, historia audiolibros, beneficios escuchar literatura, Horacio Lanci educativo"
-        image="/images/og-educativo.jpg"
-        url="/sobre-audiolibros"
+        image="images/og-educativo.jpg"
+        url="sobre-audiolibros"
         type="article"
         author="Horacio Lanci"
       />
       
       {/* Hero Section con fondo */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white py-20">
+      <section className="relative bg-gradient-to-br from-yellow-800 via-amber-900 to-yellow-900 text-white py-20">
         {/* Fondo con imagen */}
         <div className="absolute inset-0 z-0">
           <img
             src="images/background home books.jpg"
             alt="Fondo vintage library"
-            className="w-full h-full object-cover opacity-25"
+            className="w-full h-full object-cover opacity-85"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-indigo-900/75 to-purple-900/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-800/80 via-amber-900/75 to-yellow-900/80"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -189,7 +190,6 @@ const SobreAudiolibros = () => {
           {/* Definición y conceptos básicos */}
           <div id="definicion-conceptos" className="bg-card rounded-2xl shadow-xl overflow-hidden mb-8">
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Imagen a la izquierda */}
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
                   src="images/audiolibros_dominio_publico.png"
@@ -199,7 +199,6 @@ const SobreAudiolibros = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20"></div>
               </div>
               
-              {/* Contenido a la derecha */}
               <div className="md:order-2 p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
                   <BookOpen className="w-8 h-8 mr-3 text-primary" />
@@ -235,7 +234,6 @@ const SobreAudiolibros = () => {
           {/* Marco legal */}
           <div id="marco-legal" className="bg-card rounded-2xl shadow-xl overflow-hidden mb-8">
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Contenido a la izquierda */}
               <div className="md:order-1 p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
                   <Gavel className="w-8 h-8 mr-3 text-secondary" />
@@ -276,7 +274,6 @@ const SobreAudiolibros = () => {
                 </div>
               </div>
               
-              {/* Imagen a la derecha */}
               <div className="md:order-2 relative h-64 md:h-auto">
                 <img
                   src="images/marco_legal_internacional.png"
@@ -291,7 +288,6 @@ const SobreAudiolibros = () => {
           {/* Beneficios */}
           <div id="beneficios-literatura" className="bg-card rounded-2xl shadow-xl overflow-hidden mb-8">
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Imagen a la izquierda */}
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
                   src="images/beneficios_escuchar.png"
@@ -301,42 +297,47 @@ const SobreAudiolibros = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20"></div>
               </div>
               
-              {/* Contenido a la derecha */}
               <div className="md:order-2 p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
                   <Heart className="w-8 h-8 mr-3 text-accent" />
                   Beneficios de Escuchar Literatura
                 </h2>
                 
-                <div className="grid grid-cols-1 gap-6">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                       <BookOpen className="w-8 h-8 text-blue-600" />
                     </div>
-                    <h3 className="font-bold text-foreground mb-2">Cognitivos</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Mejora la concentración, memoria y comprensión auditiva. Estimula la imaginación y creatividad.
-                    </p>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Cognitivos</h3>
+                      <p className="text-muted-foreground text-sm">
+                        Mejora la concentración, memoria y comprensión auditiva. Estimula la imaginación y creatividad.
+                      </p>
+                    </div>
                   </div>
                   
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Users className="w-8 h-8 text-green-600" />
                     </div>
-                    <h3 className="font-bold text-foreground mb-2">Sociales</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Acceso universal sin barreras. Ideal para personas con dificultades de lectura tradicional.
-                    </p>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Sociales</h3>
+                      <p className="text-muted-foreground text-sm">
+                        Acceso universal sin barreras. Ideal para personas con dificultades de lectura tradicional.
+                      </p>
+                    </div>
                   </div>
                   
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Clock className="w-8 h-8 text-purple-600" />
                     </div>
-                    <h3 className="font-bold text-foreground mb-2">Prácticos</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Multitarea posible. Perfecto para viajes, ejercicio o relajación. Aprovecha tiempos muertos.
-                    </p>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-2">Prácticos</h3>
+                      <p className="text-muted-foreground text-sm">
+                        Multitarea posible. Perfecto para viajes, ejercicio o relajación. Aprovecha tiempos muertos.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -346,7 +347,6 @@ const SobreAudiolibros = () => {
           {/* El proceso de Horacio */}
           <div id="proceso-seleccion" className="bg-card rounded-2xl shadow-xl overflow-hidden mb-8">
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Contenido a la izquierda */}
               <div className="md:order-1 p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
                   <Award className="w-8 h-8 mr-3 text-primary" />
@@ -408,12 +408,12 @@ const SobreAudiolibros = () => {
                 </div>
               </div>
               
-              {/* Imagen a la derecha */}
-              <div className="md:order-2 relative h-64 md:h-auto">
+              <div className="md:order-2 relative h-48 md:h-48">
                 <img
                   src="images/proceso_seleccion.png"
                   alt="Proceso de Selección"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-bottom"
+                  style={{objectPosition: '50% 85%'}}
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/20"></div>
               </div>
@@ -423,7 +423,6 @@ const SobreAudiolibros = () => {
           {/* Historia y Evolución - Expandido */}
           <div id="historia-evolucion" className="bg-card rounded-2xl shadow-xl overflow-hidden mb-8">
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Imagen a la izquierda */}
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
                   src="images/historia_evolucion.png"
@@ -433,7 +432,6 @@ const SobreAudiolibros = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20"></div>
               </div>
               
-              {/* Contenido a la derecha */}
               <div className="md:order-2 p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
                   <Clock className="w-8 h-8 mr-3" style={{color: '#D7AA4E'}} />
@@ -459,12 +457,11 @@ const SobreAudiolibros = () => {
                 </div>
               </div>
             </div>
-
+          </div>
 
           {/* Guía por Géneros - Expandido */}
           <div id="guia-generos" className="bg-card rounded-2xl shadow-xl overflow-hidden mb-8">
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Contenido a la izquierda */}
               <div className="md:order-1 p-8">
                 <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center">
                   <Lightbulb className="w-8 h-8 mr-3" style={{color: '#7f40b7'}} />
@@ -512,7 +509,6 @@ const SobreAudiolibros = () => {
                 </div>
               </div>
               
-              {/* Imagen a la derecha */}
               <div className="md:order-2 relative h-64 md:h-auto">
                 <img
                   src="images/guia_generos.png"
@@ -539,7 +535,7 @@ const SobreAudiolibros = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/biblioteca/todos"
+              href="biblioteca/todos"
               className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold text-lg hover:bg-secondary transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <BookOpen className="w-6 h-6" />
@@ -547,7 +543,7 @@ const SobreAudiolibros = () => {
             </a>
             
             <a
-              href="/sobre-horacio"
+              href="sobre-horacio"
               className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-card/10 hover:border-white/50 transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <Users className="w-6 h-6" />

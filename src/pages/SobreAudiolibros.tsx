@@ -9,7 +9,8 @@ const SobreAudiolibros = () => {
   useEffect(() => {
     const cargarContenido = async () => {
       try {
-        const response = await fetch('/data/contenido_educativo_audiolibros.md');
+        // Ruta relativa sin barra inicial para funcionar en GitHub Pages
+        const response = await fetch('data/contenido_educativo_audiolibros.md');
         const texto = await response.text();
         setContenidoEducativo(texto);
       } catch (error) {
@@ -38,7 +39,7 @@ const SobreAudiolibros = () => {
       titulo: '¿Qué son los Audiolibros de Dominio Público?',
       icono: BookOpen,
       descripcion: 'Comprende qué significa "dominio público" y por qué estas obras son libres para todos.',
-      imagen: '/images/audiolibros_dominio_publico.png',
+      imagen: 'images/audiolibros_dominio_publico.png',
       seccionId: 'definicion-conceptos',
       colorIcono: '#D7AA4E'
     },
@@ -46,7 +47,7 @@ const SobreAudiolibros = () => {
       titulo: 'Marco Legal Internacional',
       icono: Gavel,
       descripcion: 'Conoce las leyes internacionales que protegen y liberan las obras literarias.',
-      imagen: '/images/marco_legal_internacional.png',
+      imagen: 'images/marco_legal_internacional.png',
       seccionId: 'marco-legal',
       colorIcono: '#D7AA4E'
     },
@@ -54,7 +55,7 @@ const SobreAudiolibros = () => {
       titulo: 'Historia y Evolución',
       icono: Clock,
       descripcion: 'Descubre cómo han evolucionado los audiolibros desde sus inicios hasta hoy.',
-      imagen: '/images/historia_evolucion.png',
+      imagen: 'images/historia_evolucion.png',
       seccionId: 'historia-evolucion',
       colorIcono: '#D7AA4E'
     },
@@ -62,7 +63,7 @@ const SobreAudiolibros = () => {
       titulo: 'Beneficios de Escuchar Literatura',
       icono: Heart,
       descripcion: 'Explora los beneficios cognitivos, emocionales y educativos de los audiolibros.',
-      imagen: '/images/beneficios_escuchar.png',
+      imagen: 'images/beneficios_escuchar.png',
       seccionId: 'beneficios-literatura',
       colorIcono: '#D7AA4E'
     },
@@ -70,7 +71,7 @@ const SobreAudiolibros = () => {
       titulo: 'El Proceso de Selección',
       icono: Award,
       descripcion: 'Conoce cómo Horacio Lanci selecciona y prepara cada obra para su narración.',
-      imagen: '/images/proceso_seleccion.png',
+      imagen: 'images/proceso_seleccion.png',
       seccionId: 'proceso-seleccion',
       colorIcono: '#D7AA4E'
     },
@@ -78,7 +79,7 @@ const SobreAudiolibros = () => {
       titulo: 'Guía por Géneros Literarios',
       icono: Lightbulb,
       descripcion: 'Aprende sobre los diferentes géneros literarios disponibles en nuestra biblioteca.',
-      imagen: '/images/guia_generos.png',
+      imagen: 'images/guia_generos.png',
       seccionId: 'guia-generos',
       colorIcono: '#D7AA4E'
     }
@@ -102,8 +103,8 @@ const SobreAudiolibros = () => {
         title="¿Qué son los Audiolibros de Dominio Público? | Guía Completa"
         description="Descubre todo sobre los audiolibros de dominio público: qué son, marco legal, historia, beneficios y proceso de creación. Guía educativa completa por Horacio Lanci."
         keywords="audiolibros dominio público, qué es dominio público, audiolibros gratis legales, marco legal audiolibros, historia audiolibros, beneficios escuchar literatura, Horacio Lanci educativo"
-        image="/images/og-educativo.jpg"
-        url="/sobre-audiolibros"
+        image="images/og-educativo.jpg"
+        url="sobre-audiolibros"
         type="article"
         author="Horacio Lanci"
       />
@@ -534,7 +535,7 @@ const SobreAudiolibros = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/biblioteca/todos"
+              href="biblioteca/todos"
               className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold text-lg hover:bg-secondary transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <BookOpen className="w-6 h-6" />
@@ -542,7 +543,7 @@ const SobreAudiolibros = () => {
             </a>
             
             <a
-              href="/sobre-horacio"
+              href="sobre-horacio"
               className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-card/10 hover:border-white/50 transition-all duration-200 flex items-center justify-center space-x-2"
             >
               <Users className="w-6 h-6" />
