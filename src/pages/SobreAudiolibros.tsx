@@ -71,7 +71,7 @@ const SobreAudiolibros = () => {
       titulo: 'El Proceso de Selección',
       icono: Award,
       descripcion: 'Conoce cómo Horacio Lanci selecciona y prepara cada obra para su narración.',
-      imagen: 'images/proceso_seleccion.png',
+      imagen: 'images/ilustracion horacio.jpg',
       seccionId: 'proceso-seleccion',
       colorIcono: '#D7AA4E'
     },
@@ -143,46 +143,61 @@ const SobreAudiolibros = () => {
         </div>
       </section>
 
-      {/* Navegación de secciones */}
-      <section className="py-12 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground text-center mb-8">
-            Explora Nuestras Secciones Educativas
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {secciones.map((seccion, index) => {
-              const IconComponent = seccion.icono;
-              
-              return (
-                <div
-                  key={index}
-                  onClick={() => scrollToSection(seccion.seccionId)}
-                  className="bg-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group border border-border cursor-pointer"
-                >
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={seccion.imagen}
-                      alt={seccion.titulo}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <IconComponent className="w-8 h-8 mb-2" style={{color: seccion.colorIcono}} />
-                      <h3 className="font-bold text-lg">{seccion.titulo}</h3>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-muted-foreground leading-relaxed">
-                      {seccion.descripcion}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+{/* Navegación de secciones */}
+<section className="py-12 bg-muted">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-foreground text-center mb-8">
+      Explora Nuestras Secciones Educativas
+    </h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {secciones.map((seccion, index) => {
+        const IconComponent = seccion.icono;
+        const esProceso = seccion.seccionId === 'proceso-seleccion';
+
+        return (
+          <div
+            key={index}
+            onClick={() => scrollToSection(seccion.seccionId)}
+            className="bg-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group border border-border cursor-pointer"
+          >
+            <div
+              className={`relative overflow-hidden ${esProceso ? 'h-56' : 'h-48'}`}
+            >
+              <img
+                src={seccion.imagen}
+                alt={seccion.titulo}
+                className={
+                  'w-full h-full object-cover transition-transform duration-300 ' +
+                  (esProceso
+                    ? 'scale-120 group-hover:scale-125'
+                    : 'group-hover:scale-110')
+                }
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <IconComponent className="w-8 h-8 mb-2" style={{ color: seccion.colorIcono }} />
+                <h3 className="font-bold text-lg">{seccion.titulo}</h3>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <p className="text-muted-foreground leading-relaxed">
+                {seccion.descripcion}
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
       {/* Contenido principal */}
       <section className="py-16">
@@ -408,15 +423,15 @@ const SobreAudiolibros = () => {
                 </div>
               </div>
               
-              <div className="md:order-2 relative h-48 md:h-48">
+              <div className="md:order-2 relative h-64 md:h-auto">
                 <img
-                  src="images/proceso_seleccion.png"
+                  src="images/ilustracion horacio.jpg"
                   alt="Proceso de Selección"
-                  className="w-full h-full object-cover object-bottom"
-                  style={{objectPosition: '50% 85%'}}
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/20"></div>
               </div>
+
             </div>
           </div>
 
