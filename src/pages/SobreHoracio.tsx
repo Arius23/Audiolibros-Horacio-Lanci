@@ -56,7 +56,7 @@ const SobreHoracio = () => {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="md:order-1 relative h-64 md:h-auto">
                 <img
-                  src="images/pasion_literatura_horacio.png"
+                  src="images/pasion_literatura_horacio.jpg"
                   alt="Una Pasión por la Literatura"
                   className="w-full h-full object-cover"
                 />
