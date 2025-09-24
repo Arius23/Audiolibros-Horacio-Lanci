@@ -114,7 +114,7 @@ const SobreAudiolibros = () => {
         {/* Fondo con imagen */}
         <div className="absolute inset-0 z-0">
           <img
-            src="images/background home books.jpg"
+            src="images/background_home_books.jpg"
             alt="Fondo vintage library"
             className="w-full h-full object-cover opacity-85"
           />
