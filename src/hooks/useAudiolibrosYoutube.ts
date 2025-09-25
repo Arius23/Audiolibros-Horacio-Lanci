@@ -3,6 +3,20 @@ import { Audiolibro, FiltrosBusqueda, DatosCompletos } from '../types/audiobook'
 import YoutubeService from '../services/youtubeService'
 import { YoutubeVideo } from '../lib/supabase'
 
+// Imagen hero fija por género (ajustar nombres a los archivos reales en public/images)
+const IMAGEN_HERO_POR_GENERO: Record<string, string> = {
+  'misterio-detective': 'images/hero-genero-misterio.jpg',
+  'poesia-espiritualidad': 'images/hero-genero-poesia.jpg',
+  'clasica-filosofica': 'images/hero-genero-clasica.jpg',
+  'terror-gotico': 'images/hero-genero-terror.jpg',
+  'ciencia-ficcion-fantastico': 'images/hero-genero-ciencia.jpg',
+  'aventuras': 'images/hero-genero-aventuras.jpg',
+  'distopia-critica-social': 'images/hero-genero-distopia.jpg',
+  'historia-ensayo': 'images/hero-genero-historia.jpg',
+  'biografia-testimonio': 'images/hero-genero-biografia.jpg',
+  'infantil-juvenil': 'images/hero-genero-infantil.jpg'
+}
+
 export const useAudiolibrosYoutube = () => {
   const [videos, setVideos] = useState<YoutubeVideo[]>([])
   const [cargando, setCargando] = useState(true)
@@ -13,17 +27,11 @@ export const useAudiolibrosYoutube = () => {
     const cargarDatos = async () => {
       try {
         setCargando(true)
-        
-        // Cargar videos de YouTube desde Supabase
         const videosData = await YoutubeService.getVideos()
         setVideos(videosData)
-        
-        // Cargar estadísticas para obtener última actualización
+
         const stats = await YoutubeService.getStatistics()
-        if (stats) {
-          setUltimaActualizacion(stats.last_sync_at)
-        }
-        
+        if (stats) setUltimaActualizacion(stats.last_sync_at)
       } catch (err) {
         console.error('Error cargando datos de YouTube:', err)
         setError(err instanceof Error ? err.message : 'Error desconocido')
@@ -31,11 +39,10 @@ export const useAudiolibrosYoutube = () => {
         setCargando(false)
       }
     }
-
     cargarDatos()
   }, [])
 
-  // Convertir videos de YouTube a audiolibros (memoizado para optimizar rendimiento)
+  // Mapear videos -> audiolibros
   const obtenerTodosLosAudiolibros = useMemo((): Audiolibro[] => {
     if (!videos || videos.length === 0) return []
     try {
@@ -46,37 +53,33 @@ export const useAudiolibrosYoutube = () => {
     }
   }, [videos])
 
-  // Obtener audiolibros destacados (más vistos) - memoizado
+  // Destacados
   const obtenerAudiolibrosDestacados = useMemo((): Audiolibro[] => {
     try {
       return obtenerTodosLosAudiolibros
         .sort((a, b) => (b.vistas || 0) - (a.vistas || 0))
         .slice(0, 6)
-    } catch (error) {
-      console.error('Error obteniendo audiolibros destacados:', error)
+    } catch {
       return []
     }
   }, [obtenerTodosLosAudiolibros])
 
-  // Obtener autores populares - memoizado
+  // Autores populares
   const obtenerAutoresPopulares = useMemo(() => {
     try {
       const audiolibros = obtenerTodosLosAudiolibros
-      if (!audiolibros || audiolibros.length === 0) return []
-      
+      if (!audiolibros.length) return []
+
       const autoresCuenta: Record<string, number> = {}
       const autoresAudiolibros: Record<string, Audiolibro[]> = {}
-      
+
       audiolibros.forEach(libro => {
         const autor = libro.autor || 'Autor Desconocido'
         autoresCuenta[autor] = (autoresCuenta[autor] || 0) + 1
-        
-        if (!autoresAudiolibros[autor]) {
-          autoresAudiolibros[autor] = []
-        }
+        if (!autoresAudiolibros[autor]) autoresAudiolibros[autor] = []
         autoresAudiolibros[autor].push(libro)
       })
-      
+
       return Object.entries(autoresCuenta)
         .sort(([, a], [, b]) => (b || 0) - (a || 0))
         .slice(0, 5)
@@ -85,90 +88,86 @@ export const useAudiolibrosYoutube = () => {
           cantidad: cantidad || 0,
           audiolibros: autoresAudiolibros[nombre] || []
         }))
-    } catch (error) {
-      console.error('Error obteniendo autores populares:', error)
+    } catch {
       return []
     }
   }, [obtenerTodosLosAudiolibros])
 
-  // Obtener géneros - memoizado
+  // Géneros con info
   const obtenerGeneros = useMemo(() => {
     const audiolibros = obtenerTodosLosAudiolibros
-    if (!audiolibros || audiolibros.length === 0) return []
-    
+    if (!audiolibros.length) return []
+
     const generosCuenta: Record<string, number> = {}
     const generosAudiolibros: Record<string, Audiolibro[]> = {}
-    
+
     audiolibros.forEach(libro => {
       const genero = libro.genero
       generosCuenta[genero] = (generosCuenta[genero] || 0) + 1
-      
-      if (!generosAudiolibros[genero]) {
-        generosAudiolibros[genero] = []
-      }
+      if (!generosAudiolibros[genero]) generosAudiolibros[genero] = []
       generosAudiolibros[genero].push(libro)
     })
-    
+
     const generosInfo = {
-      'misterio_detective': {
-        nombre: 'Misterio y Detective',
-        descripcion: 'Historias de suspense, crímenes e investigación',
-        icono: '🔍'
+      'misterio-detective': {
+        nombre: '🕵️ MISTERIO Y DETECTIVE',
+        descripcion: 'Casos enigmáticos, pistas y giros; investigaciones que mantienen la tensión hasta la última página.',
+        icono: '🕵️'
       },
-      'ciencia_ficcion': {
-        nombre: 'Ciencia Ficción',
-        descripcion: 'Aventuras futuristas y mundos imaginarios',
-        icono: '🚀'
+      'poesia-espiritualidad': {
+        nombre: '📝 POESÍA / ESPIRITUALIDAD',
+        descripcion: 'Versos, meditación y búsqueda interior; voces que exploran la belleza, el silencio y el asombro.',
+        icono: '📝'
       },
-      'literatura_clasica': {
-        nombre: 'Literatura Clásica',
-        descripcion: 'Obras maestras de la literatura universal',
+      'clasica-filosofica': {
+        nombre: '📚 LITERATURA CLÁSICA / FILOSÓFICA',
+        descripcion: 'Obras maestras y pensamiento crítico; ideas que forjaron la historia de la cultura occidental.',
         icono: '📚'
       },
-      'poesia_espiritualidad': {
-        nombre: 'Poesía y Espiritualidad',
-        descripcion: 'Reflexiones profundas y belleza literaria',
-        icono: '✨'
+      'terror-gotico': {
+        nombre: '👻 TERROR / GÓTICO',
+        descripcion: 'Sombras, casas antiguas y presencias inquietantes; atmósferas densas que susurran miedos profundos.',
+        icono: '👻'
       },
-      'literatura_terror': {
-        nombre: 'Literatura de Terror',
-        descripcion: 'Cuentos escalofriantes y atmósferas inquietantes',
-        icono: '🌙'
+      'ciencia-ficcion-fantastico': {
+        nombre: '🚀 CIENCIA FICCIÓN / FANTÁSTICO',
+        descripcion: 'Ucronías, viajes y magia; mundos posibles donde la imaginación reescribe las reglas.',
+        icono: '🚀'
       },
-      'distopia': {
-        nombre: 'Distopía',
-        descripcion: 'Visiones críticas del futuro y la sociedad',
-        icono: '⚡'
+      'aventuras': {
+        nombre: '🗺️ AVENTURAS',
+        descripcion: 'Travesías peligrosas, mapas y tesoros; héroes que cruzan mares y montañas en busca de lo imposible.',
+        icono: '🗺️'
       },
-      'historia_biografia': {
-        nombre: 'Historia y Biografía',
-        descripcion: 'Relatos históricos y vidas extraordinarias',
-        icono: '📜'
+      'distopia-critica-social': {
+        nombre: '🏛️ DISTOPÍA / CRÍTICA SOCIAL',
+        descripcion: 'Sociedades límite y control; espejos deformantes que cuestionan poder, libertad y futuro.',
+        icono: '🏛️'
       },
-      'literatura_argentina': {
-        nombre: 'Literatura Argentina',
-        descripcion: 'Grandes autores del Río de la Plata',
-        icono: '🇦🇷'
+      'historia-ensayo': {
+        nombre: '📚 HISTORIA / ENSAYO',
+        descripcion: 'Acontecimientos, ideas y contextos; textos que iluminan el pasado y analizan el presente.',
+        icono: '📚'
       },
-      'aventura': {
-        nombre: 'Aventuras',
-        descripcion: 'Expediciones épicas y viajes extraordinarios',
-        icono: '⛵'
-      },
-      'literatura_general': {
-        nombre: 'Literatura General',
-        descripcion: 'Diversas obras de la literatura universal',
+      'biografia-testimonio': {
+        nombre: '📖 BIOGRAFÍA / TESTIMONIO',
+        descripcion: 'Vidas reales, diarios y memorias; relatos íntimos que revelan decisiones, conflictos y legado.',
         icono: '📖'
+      },
+      'infantil-juvenil': {
+        nombre: '👨‍👩‍👧‍👦 LITERATURA INFANTIL / JUVENIL',
+        descripcion: 'Aventuras formativas y humor; historias que despiertan curiosidad y empatía temprana.',
+        icono: '👨‍👩‍👧‍👦'
       }
-    }
-    
+    } as const
+
     return Object.entries(generosCuenta)
       .sort(([, a], [, b]) => b - a)
       .map(([genero, cantidad]) => ({
         genero,
         cantidad,
-        info: generosInfo[genero as keyof typeof generosInfo] || {
-          nombre: genero.replace('_', ' '),
+        info: (generosInfo as any)[genero] || {
+          nombre: genero.replace(/-/g, ' '),
           descripcion: 'Contenido literario variado',
           icono: '📚'
         },
@@ -176,127 +175,81 @@ export const useAudiolibrosYoutube = () => {
       }))
   }, [obtenerTodosLosAudiolibros])
 
-  // Buscar audiolibros con filtros - optimizado con useCallback
+  // Búsqueda con filtros
   const buscarAudiolibros = useCallback((filtros: FiltrosBusqueda): Audiolibro[] => {
     let audiolibros = [...obtenerTodosLosAudiolibros]
 
-    // Filtrar por texto
     if (filtros.texto) {
       const texto = filtros.texto.toLowerCase()
-      audiolibros = audiolibros.filter(libro => 
+      audiolibros = audiolibros.filter(libro =>
         libro.titulo.toLowerCase().includes(texto) ||
         libro.autor?.toLowerCase().includes(texto)
       )
     }
 
-    // Filtrar por autor
     if (filtros.autor.length > 0) {
-      audiolibros = audiolibros.filter(libro => 
+      audiolibros = audiolibros.filter(libro =>
         filtros.autor.includes(libro.autor || '')
       )
     }
 
-    // Filtrar por género
     if (filtros.genero.length > 0) {
-      audiolibros = audiolibros.filter(libro => 
+      audiolibros = audiolibros.filter(libro =>
         filtros.genero.includes(libro.genero)
       )
     }
 
-    // Filtrar por duración
-    audiolibros = audiolibros.filter(libro => 
+    audiolibros = audiolibros.filter(libro =>
       libro.duracion_minutos >= filtros.duracionMin &&
       libro.duracion_minutos <= filtros.duracionMax
     )
 
-    // Ordenar
     audiolibros.sort((a, b) => {
       let comparacion = 0
-      
       switch (filtros.ordenarPor) {
-        case 'titulo':
-          comparacion = a.titulo.localeCompare(b.titulo)
-          break
-        case 'vistas':
-          comparacion = (a.vistas || 0) - (b.vistas || 0)
-          break
-        case 'duracion':
-          comparacion = a.duracion_minutos - b.duracion_minutos
-          break
-        case 'fecha':
-          // Usar vistas como proxy de popularidad/fecha
-          comparacion = (a.vistas || 0) - (b.vistas || 0)
-          break
+        case 'titulo':   comparacion = a.titulo.localeCompare(b.titulo); break
+        case 'vistas':   comparacion = (a.vistas || 0) - (b.vistas || 0); break
+        case 'duracion': comparacion = a.duracion_minutos - b.duracion_minutos; break
+        case 'fecha':    comparacion = (a.vistas || 0) - (b.vistas || 0); break
       }
-      
       return filtros.ordenDireccion === 'desc' ? -comparacion : comparacion
     })
 
     return audiolibros
   }, [obtenerTodosLosAudiolibros])
 
-  // Obtener audiolibros por duración - memoizado
+  // Por duración
   const obtenerAudiolibrosPorDuracion = useMemo(() => {
-    const todosLosAudiolibros = obtenerTodosLosAudiolibros
-    if (!todosLosAudiolibros || todosLosAudiolibros.length === 0) {
+    const todos = obtenerTodosLosAudiolibros
+    if (!todos.length) {
       return {
         cortos: { titulo: 'Audiolibros Cortos', descripcion: '', duracion: '30min - 2h', icono: '⚡', color: 'green', audiolibros: [] },
         medios: { titulo: 'Audiolibros Medios', descripcion: '', duracion: '2h - 5h', icono: '⏰', color: 'blue', audiolibros: [] },
         largos: { titulo: 'Audiolibros Largos', descripcion: '', duracion: '5h+', icono: '📚', color: 'purple', audiolibros: [] }
       }
     }
-    
-    const cortos = todosLosAudiolibros.filter(libro => libro.duracion_minutos >= 30 && libro.duracion_minutos < 120)
-    const medios = todosLosAudiolibros.filter(libro => libro.duracion_minutos >= 120 && libro.duracion_minutos < 300)
-    const largos = todosLosAudiolibros.filter(libro => libro.duracion_minutos >= 300)
-    
+
+    const cortos = todos.filter(l => l.duracion_minutos >= 30 && l.duracion_minutos < 120)
+    const medios = todos.filter(l => l.duracion_minutos >= 120 && l.duracion_minutos < 300)
+    const largos = todos.filter(l => l.duracion_minutos >= 300)
+
     return {
-      cortos: {
-        titulo: 'Audiolibros Cortos',
-        descripcion: 'Perfectos para viajes cortos o pausas de trabajo',
-        duracion: '30min - 2h',
-        icono: '⚡',
-        color: 'green',
-        audiolibros: cortos.sort((a, b) => (b.vistas || 0) - (a.vistas || 0))
-      },
-      medios: {
-        titulo: 'Audiolibros Medios',
-        descripcion: 'Ideales para sesiones de escucha relajada',
-        duracion: '2h - 5h',
-        icono: '⏰',
-        color: 'blue',
-        audiolibros: medios.sort((a, b) => (b.vistas || 0) - (a.vistas || 0))
-      },
-      largos: {
-        titulo: 'Audiolibros Largos',
-        descripcion: 'Experiencias inmersivas para verdaderos amantes de la literatura',
-        duracion: '5h+',
-        icono: '📚',
-        color: 'purple',
-        audiolibros: largos.sort((a, b) => (b.vistas || 0) - (a.vistas || 0))
-      }
+      cortos:  { titulo: 'Audiolibros Cortos',  descripcion: 'Perfectos para viajes cortos o pausas de trabajo', duracion: '30min - 2h', icono: '⚡', color: 'green',  audiolibros: cortos.sort((a,b)=>(b.vistas||0)-(a.vistas||0)) },
+      medios:  { titulo: 'Audiolibros Medios',  descripcion: 'Ideales para sesiones de escucha relajada',        duracion: '2h - 5h',   icono: '⏰', color: 'blue',   audiolibros: medios.sort((a,b)=>(b.vistas||0)-(a.vistas||0)) },
+      largos:  { titulo: 'Audiolibros Largos',  descripcion: 'Experiencias inmersivas para verdaderos amantes',  duracion: '5h+',       icono: '📚', color: 'purple', audiolibros: largos.sort((a,b)=>(b.vistas||0)-(a.vistas||0)) }
     }
   }, [obtenerTodosLosAudiolibros])
 
-  // Formatear duración
+  // Utilidades
   const formatearDuracion = (minutos: number): string => {
     const horas = Math.floor(minutos / 60)
     const minutosRestantes = Math.round(minutos % 60)
-    
-    if (horas === 0) {
-      return `${minutosRestantes}m`
-    }
-    
+    if (horas === 0) return `${minutosRestantes}m`
     return minutosRestantes > 0 ? `${horas}h ${minutosRestantes}m` : `${horas}h`
   }
 
-  // Extraer ID de YouTube
   const extraerIdYoutube = (url: string): string => {
-    if (!url || typeof url !== 'string') {
-      console.warn('URL inválida o undefined:', url)
-      return ''
-    }
-    
+    if (!url || typeof url !== 'string') return ''
     const patterns = [
       /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/)([^&\n?#]+)/,
       /youtube\.com\/watch\?.*v=([^&\n?#]+)/,
@@ -304,88 +257,66 @@ export const useAudiolibrosYoutube = () => {
       /youtube\.com\/embed\/([^&\n?#]+)/,
       /youtube\.com\/v\/([^&\n?#]+)/
     ]
-    
-    for (const pattern of patterns) {
-      try {
-        const match = url.match(pattern)
-        if (match && match[1]) {
-          return match[1]
-        }
-      } catch (error) {
-        console.warn('Error procesando URL:', url, error)
-      }
+    for (const p of patterns) {
+      const m = url.match(p)
+      if (m && m[1]) return m[1]
     }
-    
     return ''
   }
 
-  // Obtener thumbnail de YouTube
   const obtenerThumbnailYoutube = (url: string): string => {
     const videoId = extraerIdYoutube(url)
-    if (!videoId) return '/images/classic-books.jpg'
-    
+    if (!videoId) return 'images/genero-placeholder.jpg'
     return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
   }
 
-  // Obtener imagen de autor desde canal - memoizado
   const obtenerImagenAutorDesdeCanal = useCallback((autor: string): string => {
-    if (!obtenerTodosLosAudiolibros || obtenerTodosLosAudiolibros.length === 0) {
-      return '/images/classic-books.jpg'
-    }
-    
-    const audiolibrosDelAutor = obtenerTodosLosAudiolibros.filter(libro => libro.autor === autor)
-    
-    if (audiolibrosDelAutor.length > 0) {
-      const masVisto = audiolibrosDelAutor.sort((a, b) => (b.vistas || 0) - (a.vistas || 0))[0]
+    if (!obtenerTodosLosAudiolibros.length) return 'images/genero-placeholder.jpg'
+    const lista = obtenerTodosLosAudiolibros.filter(l => l.autor === autor)
+    if (lista.length) {
+      const masVisto = lista.slice().sort((a,b)=>(b.vistas||0)-(a.vistas||0))[0]
       return obtenerThumbnailYoutube(masVisto.url)
     }
-    
-    return '/images/classic-books.jpg'
+    return 'images/genero-placeholder.jpg'
   }, [obtenerTodosLosAudiolibros])
 
-  // Obtener imagen de género desde canal - memoizado
   const obtenerImagenGeneroDesdeCanal = useCallback((genero: string): string => {
-    if (!obtenerTodosLosAudiolibros || obtenerTodosLosAudiolibros.length === 0) {
-      return '/images/classic-books.jpg'
-    }
-    
-    const audiolibrosDelGenero = obtenerTodosLosAudiolibros.filter(libro => libro.genero === genero)
-    
-    if (audiolibrosDelGenero.length > 0) {
-      const masVisto = audiolibrosDelGenero.sort((a, b) => (b.vistas || 0) - (a.vistas || 0))[0]
+    if (!obtenerTodosLosAudiolibros.length) return 'images/genero-placeholder.jpg'
+    const lista = obtenerTodosLosAudiolibros.filter(l => l.genero === genero)
+    if (lista.length) {
+      const masVisto = lista.slice().sort((a,b)=>(b.vistas||0)-(a.vistas||0))[0]
       return obtenerThumbnailYoutube(masVisto.url)
     }
-    
-    return '/images/classic-books.jpg'
+    return 'images/genero-placeholder.jpg'
   }, [obtenerTodosLosAudiolibros])
 
-  // Crear datos simulados para compatibilidad - memoizado
+  // Imagen hero preferida por género
+  const obtenerHeroGenero = useCallback((genero: string): string => {
+    const fija = IMAGEN_HERO_POR_GENERO[genero]
+    if (fija) return fija
+    return obtenerImagenGeneroDesdeCanal(genero)
+  }, [obtenerImagenGeneroDesdeCanal])
+
+  // Datos compatibles
   const crearDatosCompatibles = useMemo((): DatosCompletos | null => {
     if (!videos || videos.length === 0) return null
-    
     try {
       const estadisticas = YoutubeService.calculateStatistics(videos)
       const audiolibros = obtenerTodosLosAudiolibros
-      
-      // Organizar por autor
+
       const porAutor: Record<string, Audiolibro[]> = {}
       audiolibros.forEach(libro => {
         const autor = libro.autor || 'Autor Desconocido'
-        if (!porAutor[autor]) {
-          porAutor[autor] = []
-        }
+        if (!porAutor[autor]) porAutor[autor] = []
         porAutor[autor].push(libro)
       })
-      
-      // Organizar por género
+
       const porGenero: Record<string, Audiolibro[]> = {}
       audiolibros.forEach(libro => {
-        if (!porGenero[libro.genero]) {
-          porGenero[libro.genero] = []
-        }
+        if (!porGenero[libro.genero]) porGenero[libro.genero] = []
         porGenero[libro.genero].push(libro)
       })
-      
+
       return {
         metadata: {
           fecha_analisis: ultimaActualizacion || new Date().toISOString(),
@@ -407,11 +338,10 @@ export const useAudiolibrosYoutube = () => {
         catalogos_estructurados: {
           por_autor: porAutor,
           por_genero: porGenero,
-          por_duracion: {} // Se puede implementar si es necesario
+          por_duracion: {}
         }
       }
-    } catch (error) {
-      console.error('Error creando datos compatibles:', error)
+    } catch {
       return null
     }
   }, [videos, obtenerTodosLosAudiolibros, ultimaActualizacion])
@@ -432,7 +362,8 @@ export const useAudiolibrosYoutube = () => {
     extraerIdYoutube,
     obtenerThumbnailYoutube,
     obtenerImagenGeneroDesdeCanal,
-    obtenerImagenAutorDesdeCanal
+    obtenerImagenAutorDesdeCanal,
+    obtenerHeroGenero
   }
 }
 
